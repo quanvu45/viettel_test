@@ -1,0 +1,3915 @@
+[
+    {
+        "id": 1,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Một biến được gọi là biến toàn cục nếu:",
+        "choices": [
+            "Nó được khai báo ngoài tất cả các hàm kể cả hàm main().",
+            "Nó được khai báo trong tất cả các hàm, ngoại trừ hàm main().",
+            "Nó được khai báo bên ngoài hàm main().",
+            "Nó được khai báo bên trong hàm main()."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 2,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Giả sử a, b là hai số thực. Biểu thức nào dưới đây viết không đúng theo cú pháp của ngôn ngữ lập trình C:",
+        "choices": [
+            "(a *= b)",
+            "(a += b)",
+            "(a = b)",
+            "(a &= b)"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 3,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Xâu định dạng nào dưới đây dùng để in ra một số nguyên hệ 16:",
+        "choices": [
+            "%d",
+            "%x",
+            "%1",
+            "%u"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 4,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Xâu định dạng nào dưới đây dùng để in ra địa chỉ của một biến:",
+        "choices": [
+            "%u",
+            "%e",
+            "%p",
+            "%x"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 5,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Xâu định dạng nào dưới đây dùng để in ra một số thực có độ chính xác kép:",
+        "choices": [
+            "%f",
+            "%u",
+            "%lf",
+            "%d"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 6,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho a=3, b=2. Biến c=(a<<b) sẽ có giá trị nào dưới đây:",
+        "choices": [
+            "c=9",
+            "c=12",
+            "c=6",
+            "c=8"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 7,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả hiển thị ra màn hình của chương trình sau là gì:\n#include <stdio.h>\nvoid main()\n{\n   int a=100, b=56;\n   printf(\"%d\", (a<b)? a:b);\n}",
+        "choices": [
+            "100",
+            "1",
+            "56",
+            "Báo lỗi khi thực hiện xây dựng chương trình"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 8,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau:\n#include <stdio.h>\nvoid main()\n{\n   int i;\n   i=10;\n   printf(\"%d\", i),\n}",
+        "choices": [
+            "12",
+            "10",
+            "8",
+            "16"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 9,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho biết giá trị của biểu thức: 2+4>2 && 4<2",
+        "choices": [
+            "1",
+            "0",
+            "-1",
+            "2"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 10,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Nếu hàm được gọi trước khi nó định nghĩa thì điều kiện là gì:",
+        "choices": [
+            "Kiểu trả về của hàm phải là kiểu void",
+            "Kiểu đầu vào của hàm phải là kiểu void.",
+            "Trước khi gọi hàm nó phải được khai báo.",
+            "Hàm chỉ trả về kiểu dữ liệu boolean"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 11,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kiểu dữ liệu nào dưới đây không được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:",
+        "choices": [
+            "Kiểu mảng.",
+            "Kiểu enum.",
+            "Kiểu short int.",
+            "Kiểu unsigned int"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 12,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Giả sử có câu lệnh: char ch[]= \"A\"; ch chứa bao nhiêu bytes:",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 13,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả in ra màn hình của chương trình sau:\n#include <stdio.h>\nvoid main()\n{\n   int ch='A';\n   printf(\"%d\", ch);\n}",
+        "choices": [
+            "A",
+            "a",
+            "65",
+            "64"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 14,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong các hàm sau, hàm nào là hàm không định dạng để nhập một kí tự từ bàn phím:",
+        "choices": [
+            "scanf();",
+            "getchar();",
+            "getch();",
+            "getche()"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 15,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nvoid main()\n{\n   int i, j;\n   for (i=1; i<4; i++)\n      j=i;\n   printf(\"%3d\", j);\n}",
+        "choices": [
+            "\"1234\"",
+            "\"3\"",
+            "\"123\"",
+            "Đáp án khác"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 16,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nvoid hoanvi(int *px, int *py)\n{\n   int z;\n   z=*px;\n   *px=*py;\n   *py=z;\n}\nvoid main()\n{\n   int a=15, b=21;\n   hoanvi(&a, &b);\n   printf(\"%d %d\", a, b);\n}",
+        "choices": [
+            "\"15 21\"",
+            "\"21 15\"",
+            "Báo lỗi khi thực hiện chương trình",
+            "Kết quả khác"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 17,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Sự hiệu chỉnh các kiểu dữ liệu số học khi tính toán là:",
+        "choices": [
+            "int -> long -> float -> double -> long double",
+            "int -> float -> long -> double -> long double.",
+            "int -> long -> long long -> float -> double.",
+            "long -> int -> float -> double -> long double."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 18,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nvoid main()\n{\n   printf(\"%d\", 3<2 || 6);\n}",
+        "choices": [
+            "6",
+            "1",
+            "0",
+            "3"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 19,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Khi nhập vào dòng văn bản: \"Chao Cac Ban\". Kết quả của chương trình sau là gì:\n#include <stdio.h>\n#include <conio.h>\nint main()\n{\n   char str[80];\n   fflush(stdin);\n   scanf(\"%s\", str);\n   printf(\"Dong van ban vua nhap la: %s\", str);\n   getch();\n   return 0;\n}",
+        "choices": [
+            "\"Chao Cac Ban\"",
+            "\"Chao Cac\"",
+            "\"Chao\"",
+            "Dữ liệu nhập vào không đúng định dạng"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 20,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Khai báo hàm tìm và trả về giá trị lớn nhất trong một mảng các số long dưới đây, khai báo nào đúng:",
+        "choices": [
+            "void Max(long *a);",
+            "long Max(long *a[]);",
+            "void Max(long a, int n);",
+            "long Max(long a[], int n);"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 21,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Nếu strcmp(S1, S2) trả về số nguyên âm thì:",
+        "choices": [
+            "Nội dung của chuỗi S1 lớn hơn nội dung chuỗi S2",
+            "Nội dung chuỗi S1 nhỏ hơn nội dung chuỗi S2.",
+            "Nội dung chuỗi S1 bằng nội dung chuỗi S2",
+            "Đáp án khác"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 22,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Nghiên cứu đoạn code sau:\nFILE* f = fopen(\"FL.txt\", \"r\");\nint n = 7;\nfprintf(f, \"%d\", n);\nHãy chọn câu đúng:",
+        "choices": [
+            "Đoạn code gây lỗi",
+            "Đoạn code này sẽ ghi trị 7 lên file \"FL.txt\".",
+            "Đoạn code này sẽ đọc một trị từ file \"FL.txt\" vào biến n.",
+            "Đáp án khác"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 23,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Giả sử f là con trỏ tệp nhị phân. Để đọc từ f cho biến x kiểu int, ta có thể dùng:",
+        "choices": [
+            "fscanf(f, \"%d\", &x);",
+            "fread(&x, sizeof(int), 1, f);",
+            "getche()",
+            "fgetc(f);"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 24,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho khai báo FILE *f1, *f2; int c; và đoạn lệnh:\nf1 = fopen(\"source\", \"rt\");\nf2 = fopen(\"TARGET\", \"wt\");\nwhile((c = fgetc(f1)) != EOF)\n   fputc(c, f2);\nTrong trường hợp tổng quát, hãy cho biết các khẳng định sau, khẳng định nào đúng:",
+        "choices": [
+            "Độ dài file \"source\" luôn bé hơn độ dài file \"TARGET\".",
+            "Độ dài file \"source\" bằng độ dài file \"TARGET\"",
+            "Độ dài file \"source\" nói chung lớn hơn độ dài file \"TARGET\".",
+            "Không xác định"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 25,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hàm nào dưới đây chỉ dùng để đọc 1 kí tự từ tệp:",
+        "choices": [
+            "getch();",
+            "fscanf();",
+            "scanf();",
+            "fgetc();"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 26,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hàm nào dưới đây chỉ dùng để ghi một khối dữ liệu vào file:",
+        "choices": [
+            "fgets()",
+            "fputs()",
+            "fwrite()",
+            "fread()"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 27,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Phát biểu đúng nhất về mẫu lệnh (f là con trỏ tệp): while ((ch=fgetc(f))!=EOF)...",
+        "choices": [
+            "Chọn 1 phần tử và kiểm tra xem có phải là EOF hay không",
+            "Đọc các phần tử của tệp chừng nào kí tự đó chưa phải là kí tự xuống dòng.",
+            "Ghi một phần tử và kiểm tra xem có phải là EOF hay không.",
+            "Đọc các phần tử của tệp chừng nào kí tự đó chưa phải là kí tự kết thúc."
+        ],
+        "answer": 4
+    },
+    {
+        "id": 28,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Khai báo nào là đúng khi sử dụng hàm fread();",
+        "choices": [
+            "int fread(void *ptr, int size, FILE *f, int n);",
+            "int fread(FILE *f, void *ptr, int size, int n);",
+            "int fread(void *ptr, int size, int n, FILE *f);",
+            "int fread(int size, void *ptr, int n, FILE *f);"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 29,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong các khởi tạo giá trị cho các cấu trúc sau, hãy chọn câu đúng:\nstruct S1 { int ngay, thang, nam; }; S1={2, 1, 3};\nstruct S2 { char hoten[10]; struct S1 ngaysinh; }; S2={\"Ly Ly\", {4, 5, 6}};",
+        "choices": [
+            "s1 đúng, s2 sai",
+            "s1 sai, s2 đúng",
+            "cả hai đều đúng",
+            "cả hai đều sai"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 30,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho đoạn chương trình:\nchar S[] = \"Helen\";\nchar *p = S;\nchar c = *(p+3);\nGiá trị của c sẽ là:",
+        "choices": [
+            "H",
+            "e",
+            "l",
+            "e"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 31,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Chương trình sau cho kết quả là gì:\n#include <stdio.h>\nvoid main()\n{\n   int *px, *py;\n   int a[]= {1,2,3,4,5,6};\n   px=a;\n   py=&a[5];\n   printf(\"%d\", ++px - py);\n};",
+        "choices": [
+            "-4",
+            "4",
+            "5",
+            "Đáp án khác"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 32,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Đâu là phát biểu đúng về linked list (danh sách liên kết):",
+        "choices": [
+            "Độ dài danh sách không thể thay đổi.",
+            "Các phần tử của nó được lưu trữ rải rác trong bộ nhớ",
+            "Để cài đặt danh sách móc nối phải sử dụng đến cấu trúc tự trỏ",
+            "Chỉ có thể xóa được phần tử đầu tiên của danh sách"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 33,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cơ chế nào dưới đây được cài đặt cho Stack (Ngăn xếp):",
+        "choices": [
+            "FILO",
+            "Tuần tự.",
+            "Round Robin.",
+            "FIFO."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 34,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong chế độ 256 màu, số bít cho mỗi pixel là:",
+        "choices": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 35,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong chế độ đồ họa (graphic mode), gốc tọa độ là:",
+        "choices": [
+            "Góc trên bên trái",
+            "Góc trên bên phải.",
+            "Góc dưới bên trái",
+            "Góc dưới bên phải"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 36,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Sau khi hàm setviewport(int x1, int y1, int x2, int y2, int clip); được thực hiện thì tọa độ (0,0) của tất cả các hàm vẽ sẽ là:",
+        "choices": [
+            "Góc trên phải của màn hình",
+            "Góc trên phải của viewport",
+            "Góc trên trái của màn hình.",
+            "Góc trên trái của viewport"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 37,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "What is output?\nvoid main()\n{\n   int ints[] = {0,1,2,3};\n   int *i1 = ints + 1;\n   int a = ++*i1;\n   int b = a + *i1;\n   printf(\"%d\\n\", b);\n   getch();\n}",
+        "choices": [
+            "4",
+            "3",
+            "6",
+            "2"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 38,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\nvoid main()\n{\n   int ints[] = {0, 5, 10, 15};\n   int *i2 = ints + 2;\n   int a = *i2++;\n   printf(\"%d#%d\\n\", a, *i2);\n   getch();\n}",
+        "choices": [
+            "10#15",
+            "10#10",
+            "15#15",
+            "11#15"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 39,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "What is output?\nvoid main()\n{\n   char str[] = \"pvpit\";\n   char *s1 = str;\n   s1++;\n   printf(\"%c\", *s1);\n   getch();\n}",
+        "choices": [
+            "pvpit",
+            "vpit",
+            "v",
+            "p"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 40,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Dòng nào có thể gây ra lỗi trong đoạn code sau:\nint main(int argc, char** argv)\n{\n   const char* foo = \"wow\"; // line 1\n   foo = \"top\"; // line 2\n   foo[0] = 't'; // line 3\n   return 0;\n}",
+        "choices": [
+            "line 1",
+            "line 2",
+            "line 3",
+            "Không dòng nào sai"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 41,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "What is output?\nvoid main()\n{\n   int x = 5, y = 6;\n   int* const p = &x;\n   p = &y;\n   printf(\"%d\", *p);\n   getch();\n}",
+        "choices": [
+            "Compiler error",
+            "5",
+            "6",
+            "11"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 42,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "What is output of code?\nvoid main()\n{\n   int x = 5;\n   const int *p;\n   p = &x;\n   x++;\n   *p = 4;\n   printf(\"%d\", *p);\n   getch();\n}",
+        "choices": [
+            "5",
+            "6",
+            "Compiler error",
+            "4"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 43,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nint main()\n{\n   int a = 320;\n   char *ptr;\n   ptr = (char*)&a;\n   printf(\"%d \", *ptr);\n   return 0;\n}",
+        "choices": [
+            "320",
+            "64",
+            "Compiler error",
+            "0"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 44,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nint main()\n{\n   int i = 3;\n   int *j;\n   int **k;\n   j = &i;\n   k = &j;\n   printf(\"%u, %u, %d\", k, *k, **k);\n   return 0;\n}",
+        "choices": [
+            "Address of j, Address of i, 3",
+            "Compiler error",
+            "3, 3, 3",
+            "Address of i, Address of j, 3"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 45,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include<stdio.h>\n#include<conio.h>\nint main()\n{\n   int a = 10;\n   void *p = &a;\n   int **ptr = &p;\n   printf(\"%u\\n\", **ptr);\n   getch();\n}",
+        "choices": [
+            "10",
+            "0",
+            "Compiler error",
+            "address of a"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 46,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\n#include <conio.h>\nint main()\n{\n   int i = 5, j;\n   int *p, *q;\n   p = &i;\n   *q = &j;\n   j = 5;\n   printf(\"%d %d\", *p, *q);\n   getch();\n}",
+        "choices": [
+            "5 5",
+            "Compiler error",
+            "garbage values",
+            "5 0"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 47,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include<stdio.h>\n#include<conio.h>\nvoid main()\n{\n   int i = 5;\n   int *p;\n   p = &i;\n   printf(\" %u %u\", *&p, &*p);\n   getch();\n}",
+        "choices": [
+            "Address of i, Address of i",
+            "Garbage value, Garbage value",
+            "Compiler error",
+            "5 5"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 48,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\nvoid main()\n{\n   int i = 400;\n   int *ptr = &i;\n   *++ptr = 2;\n   printf(\"%d %d\", i, *ptr);\n   getch();\n}",
+        "choices": [
+            "400 2",
+            "400 400",
+            "Compiler Error",
+            "400 401"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 49,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\nvoid main()\n{\n   char *s = \"\\12345s\\n\";\n   printf(\"%d\", strlen(s));\n   getch();\n}",
+        "choices": [
+            "5",
+            "7",
+            "10",
+            "6"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 50,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nint main()\n{\n   printf(\"%d\\t\", sizeof(6.5));\n   printf(\"%d\\t\", sizeof(90000));\n   printf(\"%d\", sizeof('A'));\n   getch();\n}\nBiết kích thước kiểu char: 1 byte, float: 4 byte, int: 4 byte, double: 8 byte, long: 4 byte.",
+        "choices": [
+            "8 4 1",
+            "8 2 1",
+            "4 4 2",
+            "8 4 4"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 51,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\nint main()\n{\n   double num = 5.2;\n   int var = 5;\n   printf(\"%d\\t\", sizeof(!num));\n   printf(\"%d\\t\", sizeof(var = 15/20));\n   printf(\"%d\", var);\n   return 0;\n}",
+        "choices": [
+            "1 4 5",
+            "1 4 7",
+            "8 4 7",
+            "4 4 5"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 52,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\nint main()\n{\n   int w = 3;\n   int x = 31;\n   int y = 10;\n   double z = x / y % w;\n   printf(\"%f\\n\", z);\n   return 0;\n}",
+        "choices": [
+            "2.000000",
+            "0.000000",
+            "3.000000",
+            "31.000000"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 53,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\nint main()\n{\n   char a = 250;\n   int expr;\n   expr = a + !a + ~a + ++a;\n   printf(\"%d\", expr);\n   return 0;\n}",
+        "choices": [
+            "-6",
+            "4",
+            "5",
+            "250"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 54,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nvoid main()\n{\n   int x = 3;\n   printf(\"%d\", x+++++x);\n   getch();\n}",
+        "choices": [
+            "7",
+            "8",
+            "9",
+            "Compiler error"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 55,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nvoid main()\n{\n   int i = 5, j = 6, k;\n   k = i & j;\n   printf(\"%d\", k);\n   getch();\n}",
+        "choices": [
+            "4",
+            "0",
+            "1",
+            "5"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 56,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nvoid main()\n{\n   int i = 5, j = 6;\n   printf(\"%d\", i | j);\n   getch();\n}",
+        "choices": [
+            "5",
+            "6",
+            "7",
+            "4"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 57,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nextern int x = 0;\nvoid main()\n{\n   x++;\n   printf(\"%d\", x);\n   getch();\n}",
+        "choices": [
+            "0",
+            "1",
+            "Compiler error",
+            "2"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 58,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nextern int x = 0;\nvoid main()\n{\n   {\n      int x = 1;\n      printf(\"%d\", x);\n      getch();\n   }\n}",
+        "choices": [
+            "0",
+            "1",
+            "Compiler error",
+            "Đáp án khác"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 59,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nint y = 0;\nvoid main()\n{\n   int x = 0;\n   x++;\n   ++y;\n   printf(\"%d\\t%d\", x, y);\n   getch();\n}",
+        "choices": [
+            "1 1",
+            "0 0",
+            "0 1",
+            "Compiler error"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 60,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\n#include <conio.h>\nvoid count()\n{\n   static int page = 0;\n   printf(\"%d\", page);\n   page++;\n}\nvoid main()\n{\n   int i;\n   for(i=0; i<10; i++)\n      count();\n   getch();\n}",
+        "choices": [
+            "0123456789",
+            "0",
+            "1234567890",
+            "Compiler error"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 61,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include<stdio.h>\nint main()\n{\n   char *url = \"c:\\tc\\bin\\rw.c\";\n   printf(\"%s\", url);\n   return 0;\n}",
+        "choices": [
+            "c:\\te\\bin\\rw.c",
+            "c:/tc/bin/rw.c",
+            "w.c in",
+            "Chương trình in ra chuỗi bị mất định dạng do các kí tự đặc biệt (escape sequences)"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 62,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include<stdio.h>\nint main()\n{\n   const int i = 5;\n   i++;\n   printf(\"%d\", i);\n   return 0;\n}",
+        "choices": [
+            "5",
+            "4",
+            "6",
+            "Compiler error"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 63,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include \"stdio.h\"\n#include \"conio.h\"\nvoid main()\n{\n   char c = 125;\n   c = c + 10;\n   printf(\"%d\", c);\n   getch();\n}",
+        "choices": [
+            "135",
+            "8",
+            "-121",
+            "121"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 64,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\nvoid main()\n{\n   double k = 0;\n   for (k = 0.0; k < 3.0; k++);\n   printf(\"%lf\", k);\n   getch();\n}",
+        "choices": [
+            "1.000000",
+            "Compiler error",
+            "3.000000",
+            "2.000000"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 65,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <conio.h>\n#include <stdio.h>\nint foo();\nvoid main()\n{\n   int i = 0;\n   for (foo(); i == 1; i == 2)\n      printf(\"In for loop\\n\");\n   printf(\"After loop\\n\");\n   getch();\n}\nint foo()\n{\n   return 1;\n}",
+        "choices": [
+            "In for loop",
+            "After loop",
+            "Compiler error",
+            "In for loop After loop"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 66,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <conio.h>\n#include <stdio.h>\nint main()\n{\n   int i = 0;\n   while (i == 0)\n      printf(\"True\\n\");\n   printf(\"False\\n\");\n   getch();\n}",
+        "choices": [
+            "True (vòng lặp vô hạn)",
+            "False",
+            "Compiler error",
+            "True False"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 67,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <conio.h>\n#include <stdio.h>\nint main()\n{\n   int i = 0, j = 0;\n   while (i < 5, j < 10)\n   {\n      i++;\n      j++;\n   }\n   printf(\"%d,%d\\n\", i, j);\n   getch();\n}",
+        "choices": [
+            "5,5",
+            "10,10",
+            "5,10",
+            "Compiler error"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 68,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kiểu dữ liệu nào dưới đây được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:",
+        "choices": [
+            "Kiểu double.",
+            "Kiểu con trỏ",
+            "Kiểu hợp (union)",
+            "Kiểu mảng."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 69,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Xâu định dạng nào dưới đây dùng để in ra một số nguyên dài (long int):",
+        "choices": [
+            "\"%ld\"",
+            "\"%d\"",
+            "\"%f\"",
+            "\"%lf\""
+        ],
+        "answer": 1
+    },
+    {
+        "id": 70,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kiểu dữ liệu int (kiểu số nguyên 16-bit truyền thống) có thể xử lí số nguyên nằm trong khoảng nào:",
+        "choices": [
+            "0...255",
+            "-32768...32767",
+            "-128 đến 127",
+            "0...65535"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 71,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho biết giá trị của biểu thức: 5 > 1",
+        "choices": [
+            "-1",
+            "1",
+            "0",
+            "2"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 72,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kiểu dữ liệu float có thể xử lí dữ liệu trong phạm vi nào:",
+        "choices": [
+            "3.4*10^-38 đến 3.4*10^38",
+            "-32768 đến 32767.",
+            "-128...127",
+            "0...65535"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 73,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kiểu dữ liệu nào dưới đây không được coi là kiểu dữ liệu cơ bản trong ngôn ngữ lập trình C:",
+        "choices": [
+            "Kiểu mảng",
+            "Kiểu enum.",
+            "Kiểu short int",
+            "Kiểu unsigned"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 74,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Lệnh nào trong các lệnh sau cho phép chuyển sang vòng lặp tiếp theo mà không cần phải thực hiện phần còn lại của vòng lặp:",
+        "choices": [
+            "break",
+            "continue",
+            "return",
+            "goto"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 75,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Giả sử có câu lệnh: char ch = 'A'; Vậy ch sẽ chứa bao nhiêu byte:",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 76,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau:\n#include <stdio.h>\nvoid main()\n{\n   int i = 98;\n   printf(\"%c\", i);\n}",
+        "choices": [
+            "98",
+            "b",
+            "B",
+            "Kết quả khác"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 77,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong các hàm sau, hàm nào để nhập một kí tự từ bàn phím ngay sau khi gõ, không chờ nhấn Enter và không hiện ra màn hình:",
+        "choices": [
+            "scanf();",
+            "getchar()",
+            "getche()",
+            "getch()"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 78,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả in ra màn hình của chương trình sau là gì:\n#include <stdio.h>\nvoid main()\n{\n   int i;\n   for (i=2;; i++)\n      printf(\"%3d\", i);\n}",
+        "choices": [
+            "Vòng lặp vô hạn",
+            "2",
+            "Kết quả khác",
+            "Kết quả khác"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 79,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Lệnh nào trong các lệnh sau cho phép đã chuyển tới một nơi nào đó đã được gán nhãn:",
+        "choices": [
+            "break",
+            "goto",
+            "continue",
+            "return"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 80,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong ngôn ngữ C, khai báo \"int array[3][5]\" có nghĩa là:",
+        "choices": [
+            "Các phần tử của mảng là các số nguyên",
+            "Là một mảng hai chiều tối đa là 15 phần tử và mỗi phần tử là một số nguyên",
+            "Một mảng 5 hàng và 3 cột",
+            "array[3][5] là một phần tử của mảng"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 81,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả chương trình sau là gì:\n#include <stdio.h>\nvoid hoanvi(int px, int py)\n{\n   int pz;\n   pz = px; px = py; py = pz;\n}\nvoid main()\n{\n   int a = 15, b = 21;\n   hoanvi(a, b);\n   printf(\"%d %d\", a, b);\n}",
+        "choices": [
+            "\"21 15\".",
+            "\"15 21\".",
+            "Báo lỗi khi thực hiện chương trình",
+            "Kết quả khác."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 82,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Có các khai báo sau: int x = 15; int *p; Muốn p là con trỏ trỏ tới x phải thực hiện lệnh nào:",
+        "choices": [
+            "p = x;",
+            "p = &x;",
+            "p = *x",
+            "*p = x"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 83,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả in ra màn hình của biểu thức sau là gì: -3 + 4 % 5 / 2",
+        "choices": [
+            "-1",
+            "-3",
+            "1",
+            "2"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 84,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kí hiệu nào là con trỏ của phần tử thứ 3 của mảng a có 4 kí tự:",
+        "choices": [
+            "*(a+3);",
+            "*(a+2);",
+            "*a+3",
+            "*(a+4);"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 85,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho biết kết quả của đoạn chương trình sau:\nint p = 4;\np = 10 + ++p;",
+        "choices": [
+            "14",
+            "15",
+            "16",
+            "13"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 86,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Phép cộng 1 con trỏ với một số nguyên sẽ là:",
+        "choices": [
+            "Một con trỏ có cùng kiểu",
+            "Một số nguyên",
+            "Một kết quả không xác định",
+            "Đáp án khác"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 87,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Phép toán 1 ngôi nào dùng để xác định địa chỉ của đối tượng mà con trỏ chỉ tới (lấy địa chỉ của biến):",
+        "choices": [
+            "*",
+            "&",
+            "$",
+            "%"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 88,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nint change(int *a)\n{\n   *a = 10;\n   return *a;\n};\nvoid main()\n{\n   int i = 5;\n   change(&i);\n   printf(\"%d\", i);\n}",
+        "choices": [
+            "5",
+            "10",
+            "0",
+            "15"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 89,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cái gì quyết định kích thước của vùng nhớ được cấp phát cho các biến:",
+        "choices": [
+            "Tên biến",
+            "Kiểu dữ liệu của biến",
+            "Giá trị của biến",
+            "Địa chỉ của biến"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 90,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Kết quả của chương trình sau là gì:\n#include <stdio.h>\nvoid main()\n{\n   int i = 1, k = 0;\n   for (; i < 5; i++) \n      k++;\n   printf(\"%d\", k);\n}",
+        "choices": [
+            "0",
+            "4",
+            "5",
+            "Vòng lặp vô hạn"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 91,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hằng số có thể được định nghĩa theo cách nào:",
+        "choices": [
+            "#define <identifier> string",
+            "const tên_kiểu tên_biến_hằng = giá_trị;",
+            "Không có cách định nghĩa chung.",
+            "tên_kiểu tên_biến_hằng = giá_trị;"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 92,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hàm gotoxy(int x, int y) là hàm:",
+        "choices": [
+            "Đặt con trỏ tại dòng x, cột y",
+            "Đặt con trỏ tại cột x, dòng y",
+            "Lưu trữ tọa độ của con trỏ màn hình cột x, dòng y",
+            "Lưu trữ tọa độ của con trỏ màn hình dòng x, cột y"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 93,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Phép toán % có ý nghĩa gì:",
+        "choices": [
+            "Đổi dấu một số thực hoặc một số nguyên",
+            "Chia hai số thực hoặc nguyên",
+            "Lấy phần dư của phép chia hai số nguyên.",
+            "Lấy phần thập phân của kết quả sau phép chia"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 94,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hàm scanf(\"%[^\\n]\", str); tương đương với lệnh nào sau đây:",
+        "choices": [
+            "getch();",
+            "getche()",
+            "macro getchar()",
+            "gets(str)"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 95,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Giá trị lôgic của biểu thức sau là gì: !(1 && 1 || 1 && 0);",
+        "choices": [
+            "1",
+            "0",
+            "-1",
+            "Không xác định"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 96,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Nếu có khai báo: char *ptr; char msg[10]; char v; Câu nào sau đây sẽ đúng:",
+        "choices": [
+            "ptr = v",
+            "ptr = msg",
+            "*msg = *ptr",
+            "*ptr = &msg"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 97,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Tại sao hai hàm scanf() và printf() gọi là 2 hàm nhập, xuất có định dạng:",
+        "choices": [
+            "Vì chúng có chuỗi định dạng trong tham số",
+            "Vì chúng thường dùng để nhập, xuất các trị trong chỉ một kiểu đã định trước",
+            "Vì một lí do khác",
+            "2 hàm trên không phải là hai hàm nhập xuất có định dạng"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 98,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Hàm nào trong các hàm sau thuộc các hàm nhập xuất không định dạng: 1-printf(); 2-scanf(); 3-getchar(); 4-putchar():",
+        "choices": [
+            "1, 2",
+            "2, 3",
+            "3, 4",
+            "1, 3"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 99,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Đâu là những toán tử toán học:",
+        "choices": [
+            "+, -, *, /, %",
+            "+, -, *, /, %, ++, --, >, <",
+            "&&, ||, !",
+            "+, -, *, %, !="
+        ],
+        "answer": 1
+    },
+    {
+        "id": 100,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Cho đoạn chương trình sau: int n=0; for (int i=0; i<10; i+=4) n+=i; Giá trị của biến n là:",
+        "choices": [
+            "8",
+            "12",
+            "16",
+            "24"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 101,
+        "category": "Lập trình C",
+        "sub_category": "Kĩ năng lập trình C căn bản",
+        "question": "Trong chế độ văn bản, dấu hiệu kết thúc tệp là:",
+        "choices": [
+            "EOF",
+            "NULL",
+            "An",
+            "Ctrl Z"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 102,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Khi Bộ xử lý đang thực hiện chương trình, nếu có ngắt (không bị cấm) gửi đến, thì:",
+        "choices": [
+            "Thực hiện xong chương trình rồi thực hiện ngắt",
+            "Từ chối ngắt, không phục vụ",
+            "Phục vụ ngắt ngay, sau đó thực hiện chương trình",
+            "Thực hiện xong lệnh hiện tại, rồi phục vụ ngắt, cuối cùng quay lại thực hiện tiếp chương trình"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 103,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Có các loại ngắt sau trong máy tính:",
+        "choices": [
+            "Ngắt cứng, ngắt mềm, ngắt trung gian",
+            "Ngắt ngoại lệ, ngắt cứng, ngắt INTR",
+            "Ngắt mềm, ngắt NMI, ngắt cứng",
+            "Ngắt cứng, ngắt mềm, ngắt ngoại lệ"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 104,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Các hoạt động của máy tính gồm:",
+        "choices": [
+            "Ngắt, Giải mã lệnh, Vào/ra",
+            "Xử lý số liệu, Ngắt, Thực hiện chương trình",
+            "Thực hiện chương trình, ngắt, vào/ra",
+            "Tính toán kết quả, Lưu trữ dữ liệu, vào/ra"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 105,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Trong máy tính, có các loại bus liên kết hệ thống nhau:",
+        "choices": [
+            "Chỉ dẫn, Chức năng, Điều khiển",
+            "Điều khiển, Dữ liệu, Địa chỉ",
+            "Dữ liệu, Phụ thuộc, Điều khiển",
+            "Dữ liệu, Điều khiển, Phụ trợ"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 106,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Hệ thống vào/ra của máy tính không bao gồm đồng thời các thiết bị sau:",
+        "choices": [
+            "Đĩa từ, Loa, Đĩa CD-ROM",
+            "Màn hình, RAM, Máy in",
+            "CPU, Chuột, Máy quét ảnh",
+            "ROM, RAM, Các thanh ghi"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 107,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Hệ thống nhớ của máy tính bao gồm:",
+        "choices": [
+            "Cache, Bộ nhớ ngoài, ROM",
+            "Bộ nhớ ngoài, ROM",
+            "Đĩa quang, Bộ nhớ trong",
+            "Bộ nhớ trong, Bộ nhớ ngoài"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 108,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Bộ xử lý gồm các thành phần (không kể bus bên trong):",
+        "choices": [
+            "Khối điều khiển, Các thanh ghi, Cổng vào/ra",
+            "Khối điều khiển, ALU, Các thanh ghi",
+            "Các thanh ghi, DAC, Khối điều khiển",
+            "ALU, Các thanh ghi, Cổng vào/ra"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 109,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Các thành phần cơ bản của máy tính:",
+        "choices": [
+            "RAM, CPU, đĩa cứng, Bus liên kết",
+            "Hệ thống nhớ, Bus liên kết, ROM, Bàn phím",
+            "Hệ thống nhớ, Bộ xử lý, Màn hình, Chuột",
+            "Hệ thống nhớ, Bộ xử lý, Hệ thống vào ra, Bus liên kết"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 110,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Trình tự xử lý thông tin của máy tính điện tử:",
+        "choices": [
+            "CPU -> Đĩa cứng -> Màn hình",
+            "Nhận thông tin -> Xử lý thông tin -> Xuất thông tin",
+            "CPU -> Bàn phím -> Màn hình",
+            "Màn hình -> Máy in -> Đĩa mềm"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 111,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Các chức năng cơ bản của máy tính:",
+        "choices": [
+            "Lưu trữ dữ liệu, Chạy chương trình, Nối ghép với TBNV, Truy nhập bộ nhớ",
+            "Trao đổi dữ liệu, Điều khiển, Thực hiện lệnh, Xử lý dữ liệu",
+            "Lưu trữ dữ liệu, Xử lý dữ liệu, Trao đổi dữ liệu, Điều khiển",
+            "Điều khiển, Lưu trữ dữ liệu, Thực hiện phép toán, Kết nối Internet"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 112,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "INTR là tín hiệu ngắt cứng chắn được",
+            "INTR là tín hiệu ngắt mềm",
+            "INTR là tín hiệu ngắt cứng không chắn được",
+            "INTR là một tín hiệu ngắt ngoại lệ"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 113,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Cho đến nay, máy tính đã phát triển qua:",
+        "choices": [
+            "5 thế hệ",
+            "4 thế hệ",
+            "3 thế hệ",
+            "2 thế hệ"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 114,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Theo luật Moore, số lượng transistor sẽ tăng gấp đôi sau mỗi:",
+        "choices": [
+            "22 tháng",
+            "20 tháng",
+            "18 tháng",
+            "16 tháng"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 115,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển MEMR là tín hiệu:",
+        "choices": [
+            "Đọc lệnh dữ liệu từ ngăn nhớ",
+            "Ghi lệnh/dữ liệu ra ngăn nhớ",
+            "Đọc lệnh từ thiết bị ngoại vi",
+            "Ghi lệnh ra thiết bị ngoại vi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 116,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển IOW là tín hiệu:",
+        "choices": [
+            "Đọc lệnh/dữ liệu từ thiết bị ngoại vi",
+            "Ghi lệnh/dữ liệu ra thiết bị ngoại vi",
+            "Đọc dữ liệu từ thiết bị ngoại vi",
+            "Ghi dữ liệu ra thiết bị ngoại vi"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 117,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển HOLD là tín hiệu:",
+        "choices": [
+            "CPU trả lời chấp nhận ngắt",
+            "CPU gửi ra ngoài xin dùng bus",
+            "Từ bên ngoài gửi đến CPU xin dùng bus",
+            "Từ bên ngoài gửi đến CPU trả lời không dùng bus"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 118,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển HLDA là tín hiệu:",
+        "choices": [
+            "CPU trả lời không chấp nhận ngắt",
+            "CPU trả lời chấp nhận ngắt",
+            "Từ bên ngoài gửi đến CPU xin ngắt",
+            "CPU trả lời đồng ý nhường bus"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 119,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển INTA là tín hiệu:",
+        "choices": [
+            "CPU trả lời không chấp nhận ngắt",
+            "CPU trả lời chấp nhận ngắt",
+            "Từ bên ngoài gửi đến CPU xin ngắt",
+            "Ngắt ngoại lệ"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 120,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Tín hiệu điều khiển INTR là tín hiệu:",
+        "choices": [
+            "Từ bên ngoài gửi đến CPU xin ngắt",
+            "Từ CPU gửi ra ngoài xin ngắt",
+            "Từ bộ nhớ chính gửi đến CPU xin ngắt",
+            "Từ CPU gửi đến bộ nhớ chính xin ngắt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 121,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Với tín hiệu điều khiển MEMW, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Là tín hiệu được phát ra bởi CPU",
+            "Là tín hiệu bên ngoài gửi đến CPU",
+            "Không phải là tín hiệu truy nhập cổng vào/ra",
+            "Là tín hiệu điều khiển ghi"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 122,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Theo cách phân loại truyền thống, có các loại máy tính sau đây:",
+        "choices": [
+            "Bộ vi điều khiển, máy tính cá nhân, máy tính lớn, siêu máy tính, máy vi tính",
+            "Máy tính xách tay, máy tính lớn, máy tính để bàn, máy vi tính, siêu máy tính",
+            "Máy tính xách tay, máy tính mini, máy tính lớn, siêu máy tính, máy chủ",
+            "Bộ vi điều khiển, máy vi tính, máy tính mini, máy tính lớn, siêu máy tính"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 123,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Theo cách phân loại hiện đại, có các loại máy tính sau đây:",
+        "choices": [
+            "Máy tính để bàn, máy chủ, máy tính nhúng",
+            "Máy chủ, máy tính mini, máy tính lớn",
+            "Máy tính mini, máy tính nhúng, siêu máy tính",
+            "Máy tính để bàn, máy tính lớn, máy tính nhúng"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 124,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Các thành phần cơ bản của thiết bị ngoại vi:",
+        "choices": [
+            "Bộ chuyển đổi tín hiệu, Logic điều khiển, Bộ đệm",
+            "Bộ chuyển đổi trạng thái, Logic đọc, Bộ đếm tiền",
+            "Bộ chuyển đổi hiện thời, Logic ghi, Bộ kiểm tra",
+            "Bộ chuyển đổi địa chỉ, Logic nhận, Bộ đếm lùi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 125,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Đối với các tín hiệu điều khiển, phát biểu nào sau đây là sai:",
+        "choices": [
+            "MEMR là tín hiệu đọc lệnh (dữ liệu) từ bộ nhớ",
+            "MEMW là tín hiệu đọc lệnh từ bộ nhớ",
+            "IOR là tín hiệu đọc dữ liệu từ cổng vào ra",
+            "IOW là tín hiệu ghi dữ liệu ra cổng vào ra"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 126,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Tổng quan máy tính",
+        "question": "Trong các giai đoạn phát triển của máy tính, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Thế hệ thứ hai dùng transistor",
+            "Thế hệ thứ ba dùng transistor",
+            "Thế hệ thứ nhất dùng đèn điện tử chân không",
+            "Thế hệ thứ tư dùng vi mạch"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 127,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên không dấu, 8 bít, giá trị biểu diễn số 261 là:",
+        "choices": [
+            "1001 0001",
+            "1010 1011",
+            "1000 0111",
+            "Không biểu diễn được"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 128,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên không dấu, 8 bít, giá trị biểu diễn số 132 là:",
+        "choices": [
+            "1001 0001",
+            "1000 0100",
+            "1000 0111",
+            "Không biểu diễn được"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 129,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên có dấu, 8 bit, giá trị biểu diễn số 129 là:",
+        "choices": [
+            "1001 0001",
+            "1010 1011",
+            "1000 0111",
+            "Không biểu diễn được"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 130,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên có dấu, 8 bít, giá trị biểu diễn số 124 là:",
+        "choices": [
+            "0111 1100",
+            "0101 1011",
+            "0100 0111",
+            "Không biểu diễn được"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 131,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Dải biểu diễn số nguyên không dấu, n bít trong máy tính là:",
+        "choices": [
+            "0 -> 2^n",
+            "0 -> 2^(n-1)",
+            "0 -> (2^n - 1)",
+            "0 -> 2^n"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 132,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Dải biểu diễn số nguyên có dấu, n bít trong máy tính là:",
+        "choices": [
+            "-2^(n-1) đến 2^(n-1) - 1",
+            "-2^(n-1) đến 2^(n-1) + 1",
+            "-2^(n-1) - 1 đến 2^(n-1) - 1",
+            "-2^(n-1) đến 2^(n-1)"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 133,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên có dấu, 8 bít, dùng phương pháp “Dấu và độ lớn”, giá trị biểu diễn số -60 là:",
+        "choices": [
+            "0000 1101",
+            "0000 1010",
+            "1011 1100",
+            "1100 1101"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 134,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên có dấu, 8 bit, dùng phương pháp “Mã bù 2”, giá trị biểu diễn số 101 là:",
+        "choices": [
+            "0110 0101",
+            "0000 1100",
+            "0000 1110",
+            "0100 1010"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 135,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số nguyên có dấu, 8 bít, dùng phương pháp “Mã bù 2”, giá trị biểu diễn số -29 là:",
+        "choices": [
+            "1000 0000",
+            "1110 0011",
+            "1111 0000",
+            "1000 1111"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 136,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Có biểu diễn \"1100 1000\" đối với số nguyên có dấu, 8 bit, dùng phương pháp “Mã bù 2”, giá trị của nó là:",
+        "choices": [
+            "Không tồn tại",
+            "-56",
+            "56",
+            "200"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 137,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với các số 8 bit, không dấu. Hãy cho biết kết quả khi thực hiện phép tính: 0100 0111 - 0101 1111",
+        "choices": [
+            "146",
+            "166",
+            "176",
+            "232 (hoặc giá trị bù 2 tương ứng)"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 138,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số có dấu, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Cộng hai số cùng dấu, tổng luôn đúng",
+            "Cộng hai số khác dấu, tổng luôn đúng",
+            "Cộng hai số cùng dấu, nếu tổng có cùng dấu thì tổng đúng",
+            "Cộng hai số cùng dấu, nếu tổng khác dấu thì tổng sai"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 139,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số không dấu, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Khi thực hiện phép cộng, tổng luôn đúng",
+            "Khi cộng hai số cùng dấu, cho tổng khác dấu",
+            "Khi cộng có nhớ ra khỏi bít cao nhất, tổng không sai",
+            "Khi cộng không nhớ ra khỏi bít cao nhất, tổng đúng"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 140,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số có dấu, 8 bít, xét phép cộng: (-73) + (-86). Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Không cho kết quả, vì tràn số",
+            "Không cho kết quả, vì có nhớ ra khỏi bít cao nhất",
+            "-159",
+            "97 (kết quả bị sai do tràn số)"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 141,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Đối với số có dấu, 8 bit, xét phép cộng: 91 + 63. Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Không cho kết quả, vì tràn số",
+            "Kết quả sai, vì có nhớ ra khỏi bit cao nhất",
+            "-102 (kết quả bị sai do tràn số)",
+            "154"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 142,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Với bộ mã Unicode để mã hoá ký tự, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Là bộ mã 16 bit",
+            "Là bộ mã đa ngôn ngữ",
+            "Có hỗ trợ các ký tự tiếng Việt",
+            "Chỉ mã hoá được 256 ký tự"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 143,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Với bộ mã ASCII để mã hoá ký tự, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Do ANSI thiết kế",
+            "Là bộ mã 8 bit",
+            "Không hỗ trợ các ký tự điều khiển máy in",
+            "Có chứa các ký tự điều khiển truyền tin"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 144,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Với bộ mã ASCII, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Chứa các ký tự điều khiển màn hình",
+            "Mã của các ký tự \"&\", \"%\", \"@\", \"#\" thuộc phần mã mở rộng",
+            "Có chứa các ký tự kẻ khung",
+            "Mã 30H -> 39H là mã của các chữ số"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 145,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Cho số thực 81.25. Giá trị của nó ở hệ nhị phân là:",
+        "choices": [
+            "100101.1",
+            "1010001.01",
+            "100011.10",
+            "100010.011"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 146,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Cho số thực 99.3125. Giá trị của nó ở hệ nhị phân là:",
+        "choices": [
+            "111011.101",
+            "111011.0011",
+            "111010.0101",
+            "1100011.0101"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 147,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Cho số thực 51/32. Giá trị của nó ở hệ nhị phân là:",
+        "choices": [
+            "1.01011",
+            "1.01110",
+            "1.00111",
+            "1.10011"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 148,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Cho số thực 33/128. Giá trị của nó ở hệ nhị phân là:",
+        "choices": [
+            "0.0100001",
+            "0.1010101",
+            "0.1001100",
+            "0.0100011"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 149,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Trong chuẩn IEEE 754/85, dạng đơn (single precision) có độ dài:",
+        "choices": [
+            "16 bit",
+            "128 bit",
+            "64 bit",
+            "32 bit"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 150,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Trong chuẩn IEEE 754/85, dạng kép (double precision) có độ dài:",
+        "choices": [
+            "64 bit",
+            "80 bit",
+            "32 bit",
+            "128 bit"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 151,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Biểu diễn dữ liệu và số học máy tính",
+        "question": "Trong chuẩn IEEE 754/85, dạng kép mở rộng (double-extended precision) có độ dài:",
+        "choices": [
+            "128 bit",
+            "80 bit",
+            "64 bit",
+            "32 bit"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 152,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Phát biểu nào dưới đây là sai về bộ xử lý:",
+        "choices": [
+            "Bộ xử lý điều khiển hoạt động của máy tính",
+            "Bộ xử lý hoạt động theo chương trình nằm sẵn trong bộ nhớ",
+            "Bộ xử lý được cấu tạo bởi hai thành phần chính",
+            "Bộ xử lý được cấu tạo bởi ba thành phần chính"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 153,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Xét các công đoạn của bộ xử lý, thứ tự nào là đúng:",
+        "choices": [
+            "Nhận dữ liệu -> xử lý dữ liệu -> nhận lệnh -> giải mã lệnh -> ghi dữ liệu",
+            "Nhận lệnh -> nhận dữ liệu -> giải mã lệnh -> xử lý dữ liệu",
+            "Nhận lệnh -> giải mã lệnh -> nhận dữ liệu -> xử lý dữ liệu -> ghi dữ liệu",
+            "Nhận dữ liệu -> nhận lệnh -> giải mã lệnh -> xử lý dữ liệu -> ghi dữ liệu"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 154,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Với công đoạn nhận lệnh của CPU, thứ tự thực hiện đúng của các thành phần là:",
+        "choices": [
+            "Bộ đếm chương trình -> Bộ nhớ -> Thanh ghi lệnh",
+            "Bộ nhớ -> Bộ đếm chương trình -> Thanh ghi lệnh",
+            "Bộ nhớ -> Thanh ghi lệnh -> Bộ đếm chương trình",
+            "Bộ đếm chương trình -> Thanh ghi lệnh -> Bộ nhớ"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 155,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "With công đoạn giải mã lệnh của CPU, thứ tự thực hiện đúng của các thành phần truyền thông tin là:",
+        "choices": [
+            "Thanh ghi lệnh -> Giải mã -> Khối điều khiển -> Tín hiệu điều khiển",
+            "Thanh ghi lệnh -> Khối điều khiển -> Tín hiệu điều khiển -> Giải mã",
+            "Khối điều khiển -> Thanh ghi lệnh -> Giải mã -> Tín hiệu điều khiển",
+            "Thanh ghi lệnh -> Khối điều khiển -> Giải mã -> Tín hiệu điều khiển"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 156,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Với công đoạn xử lý dữ liệu của CPU, thứ tự thực hiện đúng của các thành phần là:",
+        "choices": [
+            "Thực hiện phép toán -> ALU -> Thanh ghi dữ liệu",
+            "Thực hiện phép toán -> Thanh ghi dữ liệu -> ALU",
+            "ALU -> Thực hiện phép toán -> Thanh ghi dữ liệu",
+            "ALU -> Thanh ghi dữ liệu -> Thực hiện phép toán"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 157,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Bộ xử lý nhận lệnh tại:",
+        "choices": [
+            "Bộ nhớ hoặc thiết bị ngoại vi",
+            "Bộ nhớ",
+            "Thiết bị ngoại vi",
+            "CPU"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 158,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Bộ xử lý nhận dữ liệu tại:",
+        "choices": [
+            "Bộ nhớ hoặc thiết bị ngoại vi",
+            "Bộ nhớ",
+            "Thiết bị ngoại vi",
+            "CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 159,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với nhiệm vụ của khối điều khiển (trong CPU), phát biểu nào sau đây là sai:",
+        "choices": [
+            "Điều khiển nhận lệnh tiếp theo từ bộ nhớ, đưa vào thanh ghi lệnh",
+            "Tăng nội dung của PC để trỏ vào lệnh tiếp theo",
+            "Phát ra các tín hiệu điều khiển thực hiện lệnh",
+            "Vận chuyển lệnh từ thanh ghi ra bộ nhớ"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 160,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với khối điều khiển (trong CPU), phát biểu nào sau đây là sai:",
+        "choices": [
+            "Điều khiển các tín hiệu bên trong và bên ngoài bộ xử lý",
+            "Điều khiển các thanh ghi và ALU",
+            "Chỉ điều khiển các thanh ghi và ALU",
+            "Điều khiển bộ nhớ và mô-đun vào ra"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 161,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với các thanh ghi (trong CPU), phát biểu nào sau đây là sai:",
+        "choices": [
+            "Chứa các thông tin tạm thời",
+            "Là mức đầu tiên của hệ thống nhớ",
+            "Nằm trong bộ xử lý",
+            "Người lập trình có thể thay đổi nội dung của mọi thanh ghi"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 162,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với ngăn xếp (stack), phát biểu nào sau đây là sai:",
+        "choices": [
+            "Là vùng nhớ có cấu trúc FIFO",
+            "Là vùng nhớ có cấu trúc LIFO",
+            "Khi cất thêm thông tin vào ngăn xếp, con trỏ ngăn xếp giảm",
+            "Con trỏ ngăn xếp luôn trỏ vào đỉnh ngăn xếp"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 163,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với khối điều khiển trong CPU, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Tiếp nhận tín hiệu từ CPU đến",
+            "Không tiếp nhận tín hiệu từ thiết bị ngoại vi",
+            "Giải mã lệnh được chuyển từ thanh ghi trạng thái đến",
+            "Giải mã lệnh được chuyển từ thanh ghi lệnh đến"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 164,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Xét các tín hiệu điều khiển bên trong CPU, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Điều khiển chuyển dữ liệu từ bộ nhớ ra thiết bị ngoại vi",
+            "Điều khiển chuyển dữ liệu từ thanh ghi vào ALU",
+            "Điều khiển chuyển dữ liệu từ ALU ra bộ nhớ",
+            "Điều khiển chuyển dữ liệu từ CPU vào ALU"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 165,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Xét các tín hiệu điều khiển bên trong CPU, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Điều khiển chuyển dữ liệu từ CPU ra thanh ghi",
+            "Điều khiển chuyển dữ liệu từ thanh ghi vào ALU",
+            "Điều khiển chuyển dữ liệu từ ALU ra thanh ghi",
+            "Điều khiển ALU thực hiện lệnh"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 166,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với khối ALU (trong CPU), phát biểu nào sau đây là sai:",
+        "choices": [
+            "Thực hiện phép dịch bit",
+            "Thực hiện phép so sánh hai đại lượng",
+            "Thực hiện phép lấy căn bậc hai",
+            "Thực hiện phép cộng và trừ"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 167,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Xét các tín hiệu điều khiển từ CPU ra bus hệ thống, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Điều khiển đọc dữ liệu từ ALU",
+            "Điều khiển đọc/ghi ngăn nhớ",
+            "Điều khiển chuyển dữ liệu từ ALU vào thanh ghi",
+            "Điều khiển ghi dữ liệu vào ALU"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 168,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Xét các tín hiệu điều khiển từ bus hệ thống đến CPU, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Tín hiệu điều khiển ghi ngăn nhớ",
+            "Tín hiệu điều khiển đọc ngăn nhớ",
+            "Tín hiệu xin ngắt",
+            "Tín hiệu chấp nhận ngắt"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 169,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với các thanh ghi (trong CPU), phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Có loại thanh ghi không lập trình được",
+            "Mọi thanh ghi đều có thể lập trình được",
+            "Chứa lệnh vừa được xử lý xong",
+            "Chứa trạng thái của các thiết bị ngoại vi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 170,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với cờ carry (CF), phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Được thiết lập khi phép toán có nhớ ra khỏi bít cao nhất",
+            "Được thiết lập khi phép toán không nhớ ra khỏi bít cao nhất",
+            "Không được thiết lập khi phép toán có nhớ ra khỏi bít cao nhất",
+            "Đây là cờ báo tràn đối với số có dấu"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 171,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Bộ xử lý",
+        "question": "Đối với cờ overflow (OF), phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Được thiết lập khi cộng hai số khác dấu cho kết quả âm",
+            "Được thiết lập khi cộng hai số cùng dấu cho kết quả khác dấu",
+            "Được thiết lập khi cộng hai số cùng dấu cho kết quả cùng dấu",
+            "Đây là cờ báo tràn đối với số không dấu"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 172,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: ADD BX, 10. Toán hạng nguồn thuộc chế độ địa chỉ nào:",
+        "choices": [
+            "Chế độ địa chỉ trực tiếp",
+            "Chế độ địa chỉ gián tiếp",
+            "Không tồn tại lệnh",
+            "Chế độ địa chỉ tức thời"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 173,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: SUB 100, CX. Phát biểu nào đúng về toán hạng nguồn:",
+        "choices": [
+            "Chế độ địa chỉ trực tiếp",
+            "Không tồn tại lệnh",
+            "Chế độ địa chỉ hằng số",
+            "Chế độ địa chỉ tức thời"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 174,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: MOV DX, [20]. Toán hạng nguồn thuộc chế độ địa chỉ nào:",
+        "choices": [
+            "Chế độ địa chỉ trực tiếp",
+            "Không tồn tại lệnh",
+            "Chế độ địa chỉ hằng số",
+            "Chế độ địa chỉ tức thời"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 175,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Chế độ địa chỉ nào lấy toán hạng nằm ngay trong một trường của mã lệnh Assembly:",
+        "choices": [
+            "Tức thời",
+            "Trực tiếp",
+            "Gián tiếp qua thanh ghi",
+            "Thanh ghi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 176,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: ADD AX, CX. Chế độ địa chỉ của toán hạng nguồn là:",
+        "choices": [
+            "Thanh ghi",
+            "Dịch chuyển",
+            "Gián tiếp",
+            "Trực tiếp"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 177,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: MOV DX, [BP]. Chế độ địa chỉ của toán hạng nguồn là:",
+        "choices": [
+            "Gián tiếp qua thanh ghi",
+            "Trực tiếp",
+            "Gián tiếp",
+            "Gián tiếp qua thanh ghi base"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 178,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: POP BX. Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Đây là chế độ địa chỉ thanh ghi",
+            "Không tồn tại thanh ghi",
+            "Đây là chế độ địa chỉ ngăn xếp (stack)",
+            "Đây là chế độ địa chỉ gián tiếp qua thanh ghi"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 179,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: ADD CX, 20. Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Toán hạng nguồn thuộc chế độ địa chỉ tức thời",
+            "Toán hạng nguồn thuộc chế độ địa chỉ trực tiếp",
+            "Toán hạng đích thuộc chế độ địa chỉ gián tiếp qua thanh ghi",
+            "Toán hạng đích không thuộc chế độ địa chỉ thanh ghi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 180,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: POP DX. Phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Không có toán hạng nguồn",
+            "Toán hạng đích thuộc chế độ địa chỉ trực tiếp",
+            "Toán hạng đích được ngầm hiểu",
+            "Toán hạng nguồn được ngầm hiểu"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 181,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Cho lệnh assembly: PUSH AX. Phát biểu nào sau đây là sai:",
+        "choices": [
+            "Không có toán hạng nguồn",
+            "Toán hạng đích được ngầm hiểu",
+            "Toán hạng nguồn thuộc chế độ địa chỉ thanh ghi",
+            "Toán hạng đích thuộc chế độ địa chỉ stack"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 182,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Xét lệnh LOAD. Lệnh này thuộc nhóm lệnh nào:",
+        "choices": [
+            "Nhóm lệnh số học",
+            "Nhóm lệnh chuyển dữ liệu",
+            "Nhóm lệnh chuyển điều khiển",
+            "Nhóm lệnh vào/ra"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 183,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Xét lệnh INTERRUPT. Lệnh này thuộc nhóm lệnh nào:",
+        "choices": [
+            "Nhóm lệnh số học",
+            "Nhóm lệnh chuyển dữ liệu",
+            "Nhóm lệnh chuyển điều khiển",
+            "Nhóm lệnh vào/ra"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 184,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Xét lệnh ABSOLUTE. Lệnh này thuộc nhóm lệnh nào:",
+        "choices": [
+            "Nhóm lệnh số học",
+            "Nhóm lệnh vào/ra",
+            "Nhóm lệnh điều khiển hệ thống",
+            "Nhóm lệnh logic"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 185,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Xét lệnh ROTATE. Lệnh này thuộc nhóm lệnh nào:",
+        "choices": [
+            "Nhóm lệnh chuyển điều khiển",
+            "Nhóm lệnh điều khiển hệ thống",
+            "Nhóm lệnh quan hệ",
+            "Nhóm lệnh logic"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 186,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Kiến trúc tập lệnh",
+        "question": "Xét lệnh JUMP. Lệnh này thuộc nhóm lệnh nào:",
+        "choices": [
+            "Nhóm lệnh chuyển điều khiển",
+            "Nhóm lệnh quan hệ",
+            "Nhóm lệnh vào/ra",
+            "Nhóm lệnh số học"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 187,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với bộ nhớ ROM, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Có thể dùng điện để xoá PROM",
+            "PROM là loại ROM có thể xoá và ghi lại nhiều lần",
+            "EPROM là loại ROM có thể xoá và ghi lại nhiều lần",
+            "Có thể dùng điện để xoá EPROM"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 188,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với bộ nhớ RAM, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Là loại bộ nhớ không khả biến",
+            "Là nơi lưu giữ thông tin tạm thời",
+            "Có hai loại RAM chính (SRAM và DRAM)",
+            "Là bộ nhớ đọc/ghi tuỳ ý"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 189,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với bộ nhớ RAM, phát biểu nào sau đây là sai:",
+        "choices": [
+            "DRAM được chế tạo từ mạch lật",
+            "DRAM được chế tạo từ tụ điện",
+            "SRAM được chế tạo từ mạch lật",
+            "SRAM không cần phải làm tươi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 190,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Cho chip nhớ SRAM có dung lượng 16K x 8 bit, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Có 14 đường địa chỉ",
+            "Có 8 đường dữ liệu",
+            "Các đường địa chỉ là: A0 - A13",
+            "Các đường địa chỉ là: A0 - A14"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 191,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Cho chip nhớ SRAM có dung lượng 64K x 4 bit, phát biểu nào sau đây đúng:",
+        "choices": [
+            "Các đường địa chỉ là: A0 -> A15",
+            "Các đường địa chỉ là: D0 -> D15",
+            "Các đường dữ liệu là: A0 -> A3",
+            "Các đường dữ liệu là: D1 -> D8"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 192,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Xét về chức năng, hệ thống nhớ máy tính có thể có ở các cấp:",
+        "choices": [
+            "Bên trong bộ xử lý, RAM, đĩa từ",
+            "Các thanh ghi, bộ nhớ trong, CD-ROM",
+            "Các thanh ghi, ROM, băng từ",
+            "Các thanh ghi, bộ nhớ trong, bộ nhớ ngoài"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 193,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với hệ thống nhớ, có các kiểu vật lý chế tạo như sau:",
+        "choices": [
+            "Bộ nhớ từ, RAM, bộ nhớ cache",
+            "Bộ nhớ bán dẫn, bộ nhớ từ, bộ nhớ cache",
+            "Bộ nhớ bán dẫn, bộ nhớ từ, bộ nhớ quang",
+            "Bộ nhớ quang, bộ nhớ cache, bộ nhớ từ"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 194,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Xét sơ đồ phân cấp hệ thống nhớ, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Mức thanh ghi là mức trao đổi nhanh nhất",
+            "Mức thanh ghi là mức trao đổi chậm nhất",
+            "Mức cache được chia thành hai hoặc nhiều mức",
+            "Mức cache là mức gần thanh ghi nhất"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 195,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Xét sơ đồ phân cấp hệ thống nhớ, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Từ bộ nhớ cache đến bộ nhớ ngoài, tốc độ nhanh dần",
+            "Từ thanh ghi đến bộ xử lý, tốc độ tăng dần",
+            "Từ bộ nhớ ngoài đến thanh ghi, dung lượng giảm dần",
+            "Từ bộ nhớ trong đến bộ nhớ cache, tần suất truy nhập giảm dần"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 196,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với bộ nhớ cache, phát biểu nào sau đây là đúng:",
+        "choices": [
+            "Cache có thể được đặt trên cùng chip với CPU",
+            "Bộ nhớ chính có tốc độ nhanh hơn cache",
+            "Bộ nhớ cache được đặt giữa bộ nhớ chính và bộ nhớ ngoài",
+            "Cache không được đặt trên cùng chip với CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 197,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Khi CPU truy nhập cache, có hai khả năng xảy ra là:",
+        "choices": [
+            "Trượt cache (cache miss), trúng cache (cache hit)",
+            "Sai cache, đúng cache",
+            "Trên cache, dưới cache",
+            "Trong cache, ngoài cache"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 198,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với bộ nhớ cache, các thuật toán thay thế khối dữ liệu thường gặp là:",
+        "choices": [
+            "Ngẫu nhiên (Random), FIFO, LRU, LFU",
+            "Ngẫu nhiên, LIFO, LRU, LFU",
+            "Ngẫu nhiên, FIFO, LFU, LTU",
+            "Ngẫu nhiên, LIFO, LTU, LVU"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 199,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Đối với các thuật toán thay thế dữ liệu trong cache, phát biểu nào sau đây là sai:",
+        "choices": [
+            "Thuật toán Random cho tỉ lệ cache hit thấp nhất",
+            "Thuật toán LRU cho tỉ lệ cache hit cao nhất",
+            "Thuật toán FIFO cho tỉ lệ cache hit cao nhất",
+            "Thuật toán LFU cho tỉ lệ cache hit tương đối cao"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 200,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Với chip nhớ SRAM có n đường địa chỉ, m đường dữ liệu thì dung lượng cấu trúc của chip là:",
+        "choices": [
+            "2^n x m bit",
+            "2^n x m byte",
+            "2^m x n bit",
+            "2^m x n byte"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 201,
+        "category": "Kiến trúc máy tính",
+        "sub_category": "Hệ thống nhớ",
+        "question": "Với chip nhớ DRAM có n đường địa chỉ (đã dồn kênh/multiplexed), m đường dữ liệu thì dung lượng của chip là:",
+        "choices": [
+            "2^(2n) x m bit",
+            "2^(2n) x m byte",
+            "2^n x m bit",
+            "2^n x m byte"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 202,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Chương trình của hệ thống vi xử lý là:",
+        "choices": [
+            "Là tập lệnh của nhà sản xuất vi xử lý cung cấp",
+            "Là tập hợp các lệnh được sắp xếp theo giải thuật của một bài toán hay một công việc nào đó",
+            "Là một tập hợp các lệnh được sắp xếp một cách ngẫu nhiên",
+            "Là một tập hợp các lệnh điều khiển vi xử lý hoạt động"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 203,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Hệ thống vi xử lý bao gồm bao nhiêu khối chức năng chính?",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 204,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Các thiết bị ngoại vi được kết nối tới bộ vi xử lý bằng cách nào:",
+        "choices": [
+            "Thông qua các cổng vào ra",
+            "Thông qua bộ nhớ",
+            "Thông qua Bus dữ liệu",
+            "Thông qua Bus địa chỉ"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 205,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi tín hiệu cho phép không tích cực, ngõ ra của cổng đệm 3 trạng thái sẽ có đặc điểm gì:",
+        "choices": [
+            "Giống trạng thái ngõ vào trước đó",
+            "Luôn bằng 0",
+            "Luôn bằng 1",
+            "Trạng thái trở kháng cao"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 206,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nếu địa chỉ đầu của một vùng nhớ 64 KB là 0 thì địa chỉ cuối của vùng nhớ này tính theo mã Hex là bao nhiêu (mỗi ô nhớ chứa 1 byte):",
+        "choices": [
+            "64200H",
+            "00642H",
+            "FFFFH",
+            "A700FH"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 207,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bộ nhớ EEPROM có thể xóa bằng:",
+        "choices": [
+            "Tia cực tím",
+            "Điện áp cao",
+            "Cả tia cực tím và điện áp cao",
+            "Không xoá được"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 208,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khối tạo địa chỉ AU (Address Unit) trong 80286 tạo ra địa chỉ gì:",
+        "choices": [
+            "Vật lý",
+            "Logic",
+            "Địa chỉ đoạn",
+            "Địa chỉ độ dời"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 209,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi có hàng đợi lệnh (instruction queue), chương trình sẽ thực hiện nhanh hơn do:",
+        "choices": [
+            "Quá trình đọc lệnh diễn ra nhanh hơn",
+            "Quá trình thực hiện lệnh diễn ra nhanh hơn",
+            "Quá trình đọc lệnh được thực hiện đồng thời với quá trình thực hiện lệnh",
+            "Không mất chu kỳ đọc lệnh từ bộ nhớ"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 210,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Để truy cập bộ nhớ, CPU cung cấp địa chỉ gì cho bộ nhớ:",
+        "choices": [
+            "Đoạn (Segment)",
+            "Độ dời (Offset)",
+            "Vật lý",
+            "Logic"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 211,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Các thanh ghi đa năng của CPU 80286 có độ rộng là:",
+        "choices": [
+            "4 bit",
+            "8 bit",
+            "16 bit",
+            "32 bit"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 212,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Số thanh ghi đoạn của vi xử lý 80286 là:",
+        "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 213,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thanh ghi nào được mặc định giữ số đếm trong các lệnh lặp (LOOP):",
+        "choices": [
+            "AX",
+            "BX",
+            "CX",
+            "DX"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 214,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Các thanh ghi nào giữ kết quả trong các lệnh nhân chia 16 bit?",
+        "choices": [
+            "AX và BX",
+            "AX và CX",
+            "AX và DX",
+            "AX và DI"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 215,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thanh ghi nào giữ địa chỉ đoạn khi CPU 80286 truy cập vùng nhớ lệnh?",
+        "choices": [
+            "CS",
+            "DS",
+            "ES",
+            "AH"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 216,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thanh ghi nào giữ địa chỉ Offset khi 80286 truy cập vùng nhớ ngăn xếp (Stack)?",
+        "choices": [
+            "BP và SP",
+            "SP",
+            "SS",
+            "CX"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 217,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi đọc bộ nhớ, CPU thực hiện các công việc theo tuần tự nào:",
+        "choices": [
+            "Cấp địa chỉ, cấp tín hiệu điều khiển đọc bộ nhớ, nhận dữ liệu",
+            "Cấp địa chỉ, nhận tín hiệu điều khiển đọc bộ nhớ, nhận dữ liệu",
+            "Cấp địa chỉ, cấp dữ liệu, cấp tín hiệu điều khiển đọc bộ nhớ",
+            "Nhận địa chỉ, nhận dữ liệu, cấp tín hiệu yêu cầu đọc bộ nhớ"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 218,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi xảy ra ngắt, CPU 80286 sẽ làm gì:",
+        "choices": [
+            "Ngừng hoạt động",
+            "Thực hiện lại chương trình",
+            "Chuyển qua thực hiện chương trình ngắt",
+            "Tiếp tục thực hiện chương trình hiện hành"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 219,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bảng vectơ ngắt trong hệ thống 80286 được sử dụng để:",
+        "choices": [
+            "Chứa chương trình ngắt",
+            "Chứa địa chỉ chương trình ngắt",
+            "Chứa dữ liệu cho chương trình chính",
+            "Chứa dữ liệu cho chương trình ngắt"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 220,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Sau khi thực hiện lệnh 'MOV AL, 00', ta sẽ xác định được trạng thái cờ nào thay đổi:",
+        "choices": [
+            "ZF=0",
+            "CF=0",
+            "Không cờ nào bị thay đổi",
+            "PF=0"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 221,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Sau khi thực hiện các lệnh:\nMOV AH, 05\nMOV AL, 03\nXCHG AH, AL\nGiá trị của các thanh ghi sẽ là:",
+        "choices": [
+            "AH = AL = 03",
+            "AH = AL = 05",
+            "AH = 03; AL = 05",
+            "AH = 05; AL = 03"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 222,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Giả sử ban đầu AX=1000H; BX=2000H; CX=3000H. Sau khi thực hiện các lệnh:\nPUSH AX\nPUSH BX\nPUSH CX\nPOP AX\nPOP BX\nPOP CX\nKết quả thu được tại các thanh ghi là:",
+        "choices": [
+            "AX=1000H; BX=2000H; CX=3000H",
+            "AX=2000H; BX=3000H; CX=1000H",
+            "AX=3000H; BX=2000H; CX=1000H",
+            "AX=3000H; BX=1000H; CX=2000H"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 223,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Để đảo trạng thái các bít trong một thanh ghi, ta có thể thực hiện phép toán nào:",
+        "choices": [
+            "OR với FFH",
+            "AND với FFH",
+            "XOR với FFH",
+            "XOR với 00H"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 224,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Hàm 02 ngắt 21H của DOS là hàm có chức năng gì:",
+        "choices": [
+            "Nhập một ký tự từ bàn phím",
+            "Hiện một ký tự lên màn hình",
+            "Hiện một chuỗi ký tự lên màn hình",
+            "Trả điều khiển về hệ điều hành"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 225,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Sau khi thực hiện đoạn chương trình sau, giá trị của BX sẽ bằng bao nhiêu:\nMOV CX, 99\nMOV AX, 0\nMOV BX, 1\nTIEP:\nADD AX, BX\nINC BX\nCMP AX, CX\nJNA TIEP",
+        "choices": [
+            "BX = 44",
+            "BX = 34",
+            "BX = 24",
+            "BX = 14"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 226,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Sau khi thực hiện đoạn chương trình sau, giá trị của AX sẽ bằng bao nhiêu:\nMOV CX, 10\nMOV AX, 0\nMOV BX, 1\nTIEP:\nADD AX, BX\nADD BX, 02\nCMP AX, CX\nLOOP TIEP",
+        "choices": [
+            "AX = 0210",
+            "AX = 01C8H",
+            "AX = 00C8H",
+            "AX = 0208"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 227,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Lệnh JNBE (Jump if Not Below or Equal) chuyển điều khiển chương trình khi điều kiện so sánh là:",
+        "choices": [
+            "Lớn hơn",
+            "Không lớn hơn",
+            "Nhỏ hơn",
+            "Không nhỏ hơn"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 228,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Để hiển thị một chuỗi lên màn hình bằng hàm 09 ngắt 21H của DOS, chuỗi ký tự phải kết thúc bằng:",
+        "choices": [
+            "Dấu '$'",
+            "00H",
+            "09H",
+            "Dấu '#'"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 229,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Tốc độ của hệ thống vi xử lý phụ thuộc vào các yếu tố nào sau đây:",
+        "choices": [
+            "Tốc độ CPU và chương trình",
+            "Tốc độ truy xuất bộ nhớ và chương trình",
+            "Chương trình",
+            "Tốc độ CPU, tốc độ truy xuất bộ nhớ và chương trình"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 230,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Chương trình phần mềm là yếu tố ảnh hưởng tới tốc độ hoạt động của hệ thống vi xử lý như thế nào?",
+        "choices": [
+            "Không ảnh hưởng",
+            "Là yếu tố ảnh hưởng nhiều nhất",
+            "Có ảnh hưởng nhưng không phải yếu tố quan trọng nhất",
+            "Các bộ đệm trong vi xử lý quyết định hoàn toàn"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 231,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi IC giải mã (decoder) có 3 ngõ vào địa chỉ, số ngõ ra tối đa của nó sẽ là:",
+        "choices": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 232,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Cần ít nhất bao nhiêu đường địa chỉ để giải mã chọn cho 13 chip nhớ riêng biệt trong một hệ thống vi xử lý?",
+        "choices": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 233,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Đoạn chương trình sau đây có thể biểu diễn cho cấu trúc lập trình nào:\nXOR CX, CX\nMOV AH, 1\nTIEP:\nINT 21H\nCMP AL, 27H\nJE RA\nINC CX\nJMP TIEP\nRA:",
+        "choices": [
+            "IF THEN",
+            "IF THEN ELSE",
+            "WHILE",
+            "FOR"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 234,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bao nhiêu bít nhị phân (binary) được viết gọn lại thành một số Hex (thập lục phân):",
+        "choices": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 235,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ vi xử lý, trước khi thực hiện, chương trình đang chạy được chứa trong:",
+        "choices": [
+            "Trong bộ nhớ bán dẫn (RAM/ROM)",
+            "Trong cổng vào ra",
+            "Trên Bus dữ liệu",
+            "Trong các thanh ghi của CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 236,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ nhị phân, số âm biểu diễn bằng phương pháp bit dấu có đặc điểm:",
+        "choices": [
+            "Bit MSB bằng 0",
+            "Bit LSB bằng 0",
+            "Bit LSB bằng 1",
+            "Bit MSB bằng 1"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 237,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ nhị phân, số bù 2 của một số được tạo ra bằng cách:",
+        "choices": [
+            "Bù 1 của số đó",
+            "Bất kỳ Trở kháng cao",
+            "Bù 10 của số đó",
+            "Bù 1 của số đó cộng với 1"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 238,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi muốn các đoạn của LED 7 đoạn loại Anode chung sáng, ta cần cấp cho các chân điều khiển dữ liệu mức logic nào:",
+        "choices": [
+            "Mức 1",
+            "Trở kháng cao",
+            "Mức 0",
+            "Bất kỳ"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 239,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ nhị phân, số âm 1 (-1) biểu diễn bằng tổ hợp 16 bit (mã bù 2) sẽ bằng:",
+        "choices": [
+            "1000 0000 0000 0001B",
+            "1111 1111 1111 1111B",
+            "0000 0000 1000 0001B",
+            "0000 0000 1111 1111B"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 240,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Mã ASCII của ký tự số '5' là:",
+        "choices": [
+            "05H",
+            "25H",
+            "15H",
+            "35H"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 241,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nếu dùng một thiết bị ngoại vi có dung lượng vùng nhớ trao đổi là 2 KB thì cần phải truy xuất số đường địa chỉ tối thiểu từ:",
+        "choices": [
+            "A0 .. A10",
+            "A0 .. A12",
+            "A0 .. A11",
+            "A0 .. A13"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 242,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Vi mạch MAX232 sử dụng kết nối giữa bộ vi điều khiển 8051 với máy tính có chức năng gì chính:",
+        "choices": [
+            "Đổi dữ liệu nối tiếp thành dữ liệu song song",
+            "Chuyển đổi mức logic của tín hiệu số truyền nhận giữa máy tính (RS232) và 8051 (TTL)",
+            "Đổi dữ liệu song song thành dữ liệu nối tiếp",
+            "Đệm dòng công suất tín hiệu truyền thông"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 243,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Hãy cho biết mã hiển thị số '1' của LED 7 đoạn loại Anode chung (Thứ tự bít g-f-e-d-c-b-a):",
+        "choices": [
+            "0xC0",
+            "0xF9",
+            "0xA4",
+            "0xB0"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 244,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "ROM là loại bộ nhớ bán dẫn có đặc tính:",
+        "choices": [
+            "Cho phép đọc dữ liệu, không cho phép ghi dữ liệu vào thông thường, mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu, không cho phép ghi dữ liệu vào thông thường, không mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu, cho phép ghi dữ liệu vào, mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu, cho phép ghi dữ liệu vào, không mất dữ liệu khi mất nguồn điện"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 245,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "RAM là loại bộ nhớ bán dẫn có đặc tính:",
+        "choices": [
+            "Cho phép đọc dữ liệu từ RAM, không cho phép ghi dữ liệu vào RAM, mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu từ RAM, không cho phép ghi dữ liệu vào RAM, không mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu từ RAM, cho phép ghi dữ liệu vào RAM, mất dữ liệu khi mất nguồn điện",
+            "Cho phép đọc dữ liệu từ RAM, cho phép ghi dữ liệu vào RAM, không mất dữ liệu khi mất nguồn điện"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 246,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Cần bao nhiêu bộ nhớ dung lượng 8 KB để ghép thành một vùng nhớ có dung lượng tổng 1 MB:",
+        "choices": [
+            "128",
+            "100",
+            "112",
+            "256"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 247,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Cần bao nhiêu bộ nhớ dung lượng 4 KB để ghép thành một vùng nhớ có dung lượng tổng 1 MB:",
+        "choices": [
+            "128",
+            "100",
+            "112",
+            "256"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 248,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Các thanh ghi nào giữ kết quả trong các phép toán nhân chia 16 bit trên cấu trúc 8086:",
+        "choices": [
+            "BX, CX",
+            "DX, BX",
+            "AX, BX",
+            "AX, DX"
+        ],
+        "answer": 4
+    },
+    {
+        "id": 249,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bus dữ liệu (Data Bus) có tính chất là:",
+        "choices": [
+            "Các ngõ vào của vi xử lý",
+            "Các ngõ ra của vi xử lý",
+            "Các đường truyền dẫn 2 chiều của bộ vi xử lý",
+            "Các đường trở kháng cao của bộ nhớ"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 250,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nếu địa chỉ đầu của một khối bộ nhớ dung lượng 2K bằng 0, thì địa chỉ cuối của vùng nhớ này tính theo hệ mã Hex sẽ là:",
+        "choices": [
+            "2000H",
+            "07FFH",
+            "0800H",
+            "2018H"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 251,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi muốn các đoạn của LED 7 đoạn loại Cathode chung sáng, ta cần cấp cho chúng dữ liệu mức logic nào:",
+        "choices": [
+            "Mức 1 ",
+            "Trở kháng cao ",
+            "Bất kỳ ",
+            "Mức 0 "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 252,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "BIOS (Basic Input/Output System) được các nhà sản xuất máy tính nạp sẵn vào đâu:",
+        "choices": [
+            "Bộ nhớ ROM ",
+            "Bộ nhớ RAM ",
+            "Ổ đĩa cứng ",
+            "Thiết bị USB "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 253,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Pipeline trong kiến trúc máy tính được hiểu là gì:",
+        "choices": [
+            "Là kỹ thuật xử lý xen kẽ liên tục các dòng lệnh nhằm tối ưu hiệu năng ",
+            "Là một cải tiến của Intel nhằm tăng tốc độ nạp lệnh ",
+            "Là một cải tiến của Intel nhằm tăng khả năng lưu trữ ",
+            "Là một kỹ thuật đồng bộ bus dữ liệu ngoại vi"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 254,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong bộ vi xử lý Intel 8086, bộ đệm lệnh (instruction queue/BIU) làm nhiệm vụ gì chính:",
+        "choices": [
+            "Đưa địa chỉ ra bus và trao đổi dữ liệu với bus ",
+            "Làm tăng tốc độ xử lý chung của CPU (gối đầu nạp lệnh) ",
+            "Trực tiếp thực hiện các lệnh logic ",
+            "Giải mã lệnh chuẩn bị cho khối EU "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 255,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong ngôn ngữ lập trình ASSEMBLY, tên nhãn hoặc tên biến (do người dùng đặt) nào sau đây là hợp lệ:",
+        "choices": [
+            "2000$ ",
+            "Y.2000 ",
+            "@2000 ",
+            "_VAR2000"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 256,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Tìm giá trị của thanh ghi AL sau khi thực hiện đoạn chương trình sau :\nMOV AL, 75H\nAND AL, 0EH ",
+        "choices": [
+            "05H ",
+            "24H ",
+            "04H ",
+            "07H "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 257,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khối nào đảm nhiệm chức năng thực hiện phép tính nhân trong cấu trúc vi xử lý 8086:",
+        "choices": [
+            "ALU (Arithmetic Logic Unit) ",
+            "BIU (Bus Interface Unit) ",
+            "EU (Execution Unit) ",
+            "CU (Control Unit) "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 258,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khả năng quản lý và định địa chỉ tối đa cho bộ nhớ của CPU phụ thuộc trực tiếp vào:",
+        "choices": [
+            "Độ rộng của bus địa chỉ ",
+            "Độ rộng của bus dữ liệu ",
+            "Độ rộng của bus điều khiển ",
+            "Độ rộng cấu trúc của các thanh ghi đa năng "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 259,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Một bộ vi xử lý có độ rộng Bus địa chỉ là 20 đường, số lượng vị trí nhớ (dung lượng tối đa) mà nó có thể truy xuất trực tiếp là:",
+        "choices": [
+            "1024 ",
+            "1024K (tương đương 1 MB) ",
+            "1024M ",
+            "1024G "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 260,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thành phần nào là nơi chứa dữ liệu tạm thời trong suốt quá trình CPU thực hiện lệnh:",
+        "choices": [
+            "ALU ",
+            "CU ",
+            "Các thanh ghi (Registers) ",
+            "Khối điều hành EU "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 261,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bộ vi xử lý thương mại đầu tiên được Intel sản xuất ra thị trường là:",
+        "choices": [
+            "8088 ",
+            "8086 ",
+            "4004 ",
+            "8051 "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 262,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Chip vi xử lý Intel 4004 cổ điển là bộ vi xử lý thuộc kiến trúc bao nhiêu bit:",
+        "choices": [
+            "8 bit ",
+            "4 bit ",
+            "16 bit ",
+            "32 bit "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 263,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Một bộ vi xử lý có hệ thống gồm 12 đường bus địa chỉ. Cho biết số lượng vị trí nhớ tối đa mà vi xử lý này có thể truy xuất:",
+        "choices": [
+            "1K ",
+            "4K (tương đương 4096 ô nhớ) ",
+            "1M ",
+            "4M "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 264,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Giá trị của số 125 ở hệ thập phân khi chuyển đổi sang hệ mã nhị phân (Binary) là:",
+        "choices": [
+            "1111111B ",
+            "1111101B ",
+            "1100111B ",
+            "1110111B "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 265,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Giá trị của số hexa 15BDh khi chuyển đổi hoàn chỉnh sang hệ mã nhị phân là:",
+        "choices": [
+            "0001 0101 1011 1101B ",
+            "0001 0101 1011 1110B ",
+            "1100 1010 1011 1110B ",
+            "1111 0000 1010 1010B "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 266,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Số lần ghi/xoá dữ liệu giới hạn của loại bộ nhớ chỉ đọc ROM (nói chung) là:",
+        "choices": [
+            "Chỉ 1 lần duy nhất (như masked ROM, PROM) ",
+            "Vài trăm lần ",
+            "Vài nghìn lần ",
+            "Tuỳ thuộc cụ thể vào từng loại cấu trúc ROM (EPROM, EEPROM, Flash) "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 267,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thực hiện phép tính cộng sau giữa các hệ số: 16 (hệ thập phân) + 20H (hệ hexa). Kết quả thu được là:",
+        "choices": [
+            "30H (tương đương 48 ở hệ thập phân) ",
+            "41D ",
+            "00110010B ",
+            "30D "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 268,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khối nào có chức năng chính đảm nhiệm giải mã lệnh sau khi nạp trong cấu trúc vi xử lý 8086:",
+        "choices": [
+            "Khối ALU ",
+            "Khối BIU ",
+            "Khối EU ",
+            "Khối điều khiển CU "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 269,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Kết quả của phép nhân giữa 2 số 200 và 3 ở hệ thập phân khi chạy lệnh 8-bit trên 8086 được lưu trữ mặc định trong thanh ghi nào:",
+        "choices": [
+            "Thanh ghi AH ",
+            "Thanh ghi AL ",
+            "Cặp thanh ghi AX ",
+            "Thanh ghi con trỏ IP "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 270,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Mã bù 1 của một chuỗi số nhị phân được tạo ra bằng cách nào:",
+        "choices": [
+            "Đảo trạng thái logic tất cả các bít của số nhị phân đó (0 thành 1, 1 thành 0) ",
+            "Cộng thêm 1 vào mã bù 1 ",
+            "Cộng thêm 2 vào mã bù 1 ",
+            "Lấy mã bù 1 trừ đi 1 "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 271,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Quá trình làm tươi dữ liệu tuần hoàn (Refresh) là một yêu cầu bắt buộc đối với loại bộ nhớ nào:",
+        "choices": [
+            "Bộ nhớ DRAM (Dynamic RAM) ",
+            "Bộ nhớ SRAM (Static RAM) ",
+            "Bộ nhớ FLASH ",
+            "Bộ nhớ EEPROM "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 272,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ thống bus liên kết của máy tính, bus địa chỉ (Address Bus) có chiều di chuyển thông tin cố định đi từ:",
+        "choices": [
+            "Từ CPU đến bộ nhớ và các thiết bị ngoại vi ",
+            "Từ bộ nhớ và thiết bị ngoại vi ngược về CPU ",
+            "Từ thiết bị ngoại vi đi trực tiếp đến bộ nhớ ",
+            "Từ bộ nhớ hệ thống đến các thiết bị ngoại vi "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 273,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Lệnh nào trong số các lệnh sau đây thuộc nhóm lệnh rẽ nhánh điều kiện của dòng chip vi điều khiển 8051:",
+        "choices": [
+            "INC ",
+            "MOV ",
+            "CJNE (Compare and Jump if Not Equal) ",
+            "SWAP "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 274,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Lệnh nào dùng để cất thêm dữ liệu tạm thời vào vùng nhớ ngăn xếp (Stack):",
+        "choices": [
+            "Lệnh POP ",
+            "Lệnh PUSH ",
+            "Lệnh PULL ",
+            "Lệnh SWAP "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 275,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong tập lệnh 8051, lệnh nào thực hiện di chuyển giá trị trực tiếp 7FH vào ô nhớ RAM có địa chỉ nguồn là 7FH:",
+        "choices": [
+            "MOV 7FH, 7FH ",
+            "MOV #7FH, #7FH ",
+            "MOV 7FH, #7FH ",
+            "MOV #7FH, 7FH "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 276,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Lệnh nào dùng để di chuyển nội dung của thanh ghi R0 trực tiếp vào thanh ghi tích luỹ A trong 8051:",
+        "choices": [
+            "MOV R0, A ",
+            "MOV A, R0 ",
+            "MOVX @A, @R0 ",
+            "MOV A, @R0 "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 277,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong bảng mã tiêu chuẩn ASCII cơ bản, một ký tự được mã hoá hoàn chỉnh bằng bao nhiêu bit:",
+        "choices": [
+            "5 bit ",
+            "6 bit ",
+            "7 bit ",
+            "8 bit "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 278,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khối chức năng nào đảm nhận nhiệm vụ đọc mã lệnh từ bộ nhớ chương trình về trong cấu trúc 8086:",
+        "choices": [
+            "Khối BIU (Bus Interface Unit) ",
+            "Khối ALU ",
+            "Khối EU ",
+            "Khối điều khiển trung tâm CU "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 279,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong bộ vi xử lý Intel 8086, các thanh ghi đoạn (Segment Registers) giữ vai trò gì:",
+        "choices": [
+            "Chứa địa chỉ lệch (offset) của các ô nhớ trong đoạn ",
+            "Chứa địa chỉ nền / địa chỉ đầu của các phân đoạn nhớ trong bộ nhớ ",
+            "Phản ánh toàn bộ trạng thái hoạt động hiện tại của CPU ",
+            "Chứa trực tiếp các đoạn mã dữ liệu đang tính toán "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 280,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "CPU báo hiệu hiện tượng kết quả của phép toán bị tràn số có dấu (signed overflow) bằng cách thiết lập cờ nào:",
+        "choices": [
+            "Cờ không kết quả ZF ",
+            "Cờ nhớ CF ",
+            "Cờ tràn OF (Overflow Flag) ",
+            "Cờ dấu SF "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 281,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Cần sử dụng tổ hợp song song gồm 16 bộ nhớ có dung lượng bao nhiêu KB để tạo thành một vùng nhớ lớn có tổng dung lượng 1 MB:",
+        "choices": [
+            "128 KB ",
+            "256 KB ",
+            "64 KB ",
+            "32 KB "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 282,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Bộ vi xử lý ở mức phần cứng thô chỉ có thể trực tiếp đọc hiểu và hoạt động được với các chương trình viết bằng:",
+        "choices": [
+            "Mã máy (Machine Code) ",
+            "Hợp ngữ (Assembly) ",
+            "Ngôn ngữ lập trình C ",
+            "Ngôn ngữ lập trình C++"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 283,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Khi kiến trúc CPU có tích hợp bộ giải mã lệnh phần cứng chuyên biệt, hiệu quả mang lại là:",
+        "choices": [
+            "Mã của các câu lệnh sẽ ngắn gọn hơn ",
+            "Các câu lệnh sẽ được phần cứng thực hiện với tốc độ nhanh hơn ",
+            "Mã của lệnh khi lưu trữ sẽ dài hơn ",
+            "Một số lệnh phức tạp sẽ không cần phải thực hiện nữa "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 284,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trước khi nhảy sang thực hiện một chương trình phục vụ ngắt (ISR), CPU 80286 tự động thực hiện các công việc nào để bảo toàn trạng thái:",
+        "choices": [
+            "Lưu giá trị trong các thanh ghi đa năng vào đỉnh ngăn xếp ",
+            "Lưu giá trị trong các thanh ghi đoạn vào đỉnh ngăn xếp ",
+            "Lưu giá trị trong các thanh ghi chỉ số vào đỉnh ngăn xếp ",
+            "Lưu tự động giá trị hiện tại của các thanh ghi CS, IP và thanh ghi cờ (Flags) vào vùng ngăn xếp "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 285,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ thống xử lý 80286, sau khi thực hiện xong lệnh lấy dữ liệu từ ngăn xếp (POP), giá trị của thanh ghi con trỏ ngăn xếp SP sẽ:",
+        "choices": [
+            "Tự động tăng lên (để giải phóng vùng nhớ vừa lấy) ",
+            "Giữ nguyên không thay đổi ",
+            "Tự động xoá toàn bộ về 0 ",
+            "Tự động giảm xuống "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 286,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong chế độ địa chỉ gián tiếp qua thanh ghi của Assembly, địa chỉ của toán hạng dữ liệu thực tế là:",
+        "choices": [
+            "Một hằng số cụ thể được mã hoá trực tiếp trong lệnh ",
+            "Giá trị nằm cố định trong một thanh ghi đa năng ",
+            "Giá trị nằm trong một ô nhớ có địa chỉ cụ thể chứa ngay trong lệnh ",
+            "Giá trị nằm trong một ô nhớ của RAM mà địa chỉ của ô nhớ đó đang được lưu giữ trong một thanh ghi "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 287,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Để thiết lập (set) một bit bất kỳ trong một thanh ghi lên mức 1 mà hoàn toàn không làm thay đổi trạng thái của các bit khác, ta sử dụng lệnh toán học nào:",
+        "choices": [
+            "Lệnh logic AND ",
+            "Lệnh logic OR ",
+            "Lệnh logic XOR ",
+            "Lệnh logic NOT "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 288,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nếu ghép một thiết bị ngoại vi có dung lượng không gian nhớ là 16 KB vào hệ thống, ta cần dành riêng số đường bus địa chỉ từ CPU là:",
+        "choices": [
+            "Đường địa chỉ từ A0 đến A10 ",
+            "Đường địa chỉ từ A0 đến A11 ",
+            "Đường địa chỉ từ A0 đến A12 ",
+            "Đường địa chỉ từ A0 đến A13 "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 289,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nếu kết nối một thiết bị ngoại vi có dung lượng không gian nhớ là 8 KB vào hệ thống, ta cần sử dụng số lượng đường bus địa chỉ xuất phát từ CPU là:",
+        "choices": [
+            "Đường địa chỉ từ A0 đến A11 ",
+            "Đường địa chỉ từ A0 đến A12 ",
+            "Đường địa chỉ từ A0 đến A13 ",
+            "Đường địa chỉ từ A0 đến A14 "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 290,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Hệ thống Bus địa chỉ (Address Bus) trong vi cấu trúc máy tính có đặc điểm là:",
+        "choices": [
+            "Các đường tín hiệu ngõ vào của bộ vi xử lý ",
+            "Các đường tín hiệu ngõ ra một chiều phát ra từ bộ vi xử lý ",
+            "Các đường truyền dẫn thông tin hai chiều giữa CPU và thiết bị ",
+            "Là các đường có trạng thái trở kháng cao của riêng bộ nhớ "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 291,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong hệ thống vi xử lý, Bus điều khiển (Control Bus) được sử dụng để làm gì:",
+        "choices": [
+            "Lấy mã lệnh từ bộ nhớ chương trình về CPU ",
+            "Đồng bộ và xác định các chế độ hoạt động, chu kỳ đọc/ghi của hệ thống vi xử lý ",
+            "Truyền địa chỉ ô nhớ cần truy cập vào vi xử lý ",
+            "Trực tiếp truyền tải và trao đổi dữ liệu với vi xử lý "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 292,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Câu lệnh logic nào dùng để đảo trạng thái của bit LSB và bit MSB của thanh ghi AL trong khi giữ nguyên giá trị của tất cả các bít khác:",
+        "choices": [
+            "XOR AL, 81H ",
+            "TEST AL, 81H ",
+            "AND AL, 81H ",
+            "OR AL, 81H "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 293,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Cho biết giá trị bằng số thu được tại thanh ghi AH sau khi CPU thực hiện xong đoạn chương trình sau :\nMOV AH, 0\nMOV AL, 0\nT:\nINC AL\nADD AH, AL\nCMP AL, 9\nJNE T ",
+        "choices": [
+            "55 ",
+            "45 ",
+            "2EH ",
+            "44 "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 294,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Với chuẩn mã hóa BCD (Binary-Coded Decimal), số 80 ở hệ thập phân có thể biểu diễn bằng ít nhất bao nhiêu bít nhị phân:",
+        "choices": [
+            "8 bit ",
+            "7 bit ",
+            "6 bit ",
+            "5 bit "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 295,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Trong quy ước đo lường lưu trữ và hệ thống nhị phân máy tính, một Byte bằng bao nhiêu bit:",
+        "choices": [
+            "4 bit ",
+            "8 bit ",
+            "10 bit ",
+            "16 bit "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 296,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Thuật ngữ viết tắt IC trong kỹ thuật phần cứng điện tử đại diện cho cụm từ nào:",
+        "choices": [
+            "Mạch điện tử ",
+            "Mạch điện thông thường ",
+            "Mạch tích hợp / Mạch điện tử tích hợp (Integrated Circuit) ",
+            "Mạch số chuyên dụng "
+        ],
+        "answer": 3
+    },
+    {
+        "id": 297,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Loại bộ nhớ nào trong hệ thống máy tính được sử dụng để chứa các dữ liệu tạm thời biến đổi liên tục trong lúc chạy chương trình:",
+        "choices": [
+            "Bộ nhớ RAM ",
+            "Bộ nhớ ROM ",
+            "Bộ nhớ FLASH ",
+            "Ổ đĩa cứng HDD "
+        ],
+        "answer": 1
+    },
+    {
+        "id": 298,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Đơn vị hoặc khối chức năng nào trong cấu trúc lõi CPU trực tiếp chịu trách nhiệm nhận lệnh, giải mã lệnh và điều phối thực hiện toàn bộ hệ thống:",
+        "choices": [
+            "Khối ALU ",
+            "Khối điều khiển CU (Control Unit) ",
+            "Các thanh ghi chức năng ",
+            "Khối thực hiện EU "
+        ],
+        "answer": 2
+    },
+    {
+        "id": 299,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Một bộ vi xử lý cao cấp có kiến trúc gồm 36 đường bus địa chỉ song song. Nó có thể quản lý được không gian bộ nhớ có kích thước tối đa là bao nhiêu:",
+        "choices": [
+            "64 Byte ",
+            "64 KB ",
+            "64 MB ",
+            "64 GB "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 300,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Nhiệm vụ cốt lõi và quan trọng nhất của bộ xử lý trung tâm CPU trong hệ vi xử lý là gì:",
+        "choices": [
+            "Điều hành hoạt động của toàn hệ thống theo ý định của người sử dụng thông qua chương trình điều khiển ",
+            "Thi hành chương trình liên tục theo vòng kín gọi là chu kỳ lệnh ",
+            "Chịu trách nhiệm trực tiếp giao tiếp với các thiết bị xuất nhập ngoại vi ",
+            "Bao gồm cả việc điều hành toàn hệ thống theo chương trình điều khiển và thi hành chương trình theo chu kỳ lệnh tuần hoàn "
+        ],
+        "answer": 4
+    },
+    {
+        "id": 301,
+        "category": "Vi điều khiển",
+        "sub_category": "Vi điều khiển",
+        "question": "Các khối thành phần phần cứng cơ bản trong một kiến trúc hệ vi xử lý liên kết và trao đổi dữ liệu với nhau thông qua bao nhiêu hệ thống bus chính:",
+        "choices": [
+            "2 hệ thống bus chính",
+            "3 hệ thống bus chính (Bus Địa chỉ, Bus Dữ liệu, Bus Điều khiển) ",
+            "4 hệ thống bus chính",
+            "5 hệ thống bus chính"
+        ],
+        "answer": 2
+    }
+]

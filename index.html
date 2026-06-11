@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm Ôn tập</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="app-container glass-panel">
+        <header>
+            <h1>Trắc nghiệm Ôn tập</h1>
+            <div class="score-board">
+                <span>Điểm: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
+            </div>
+        </header>
+
+        <div id="setup-screen" class="screen active">
+            <h2>Chào mừng!</h2>
+            <p>Ứng dụng sẽ tải bộ câu hỏi từ <strong>index.json</strong>.</p>
+            <button id="start-btn" class="primary-btn">Bắt đầu làm bài</button>
+            <p id="error-msg" class="error hidden">Không thể tải file index.json do giới hạn trình duyệt. Vui lòng chọn file thủ công bên dưới.</p>
+            
+            <div class="file-upload">
+                <p>Hoặc chọn file thủ công:</p>
+                <input type="file" id="file-input" accept=".json">
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="question-header">
+                <div class="badges">
+                    <span class="category-badge" id="category-badge">Category</span>
+                    <span class="category-badge sub-category" id="sub-category-badge" style="display: none;">Sub</span>
+                </div>
+                <span class="question-counter" id="question-counter">Câu 1/10</span>
+            </div>
+            <h2 id="question-text" class="question-text">Question text goes here?</h2>
+            
+            <div id="options-container" class="options-container">
+                <!-- Options will be dynamically injected here -->
+            </div>
+
+            <div class="actions">
+                <button id="prev-btn" class="secondary-btn hidden">🡠 Câu trước</button>
+                <button id="next-btn" class="secondary-btn hidden">Câu tiếp theo ➔</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>Hoàn thành!</h2>
+            <div class="final-score-circle">
+                <span id="final-score">0</span>
+                <span class="total-label">/ <span id="final-total">0</span></span>
+            </div>
+            <p id="feedback-msg">Tuyệt vời!</p>
+            <button id="restart-btn" class="primary-btn">Làm lại</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
