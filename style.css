@@ -73,13 +73,13 @@ body {
 }
 
 .app-container {
-    width: 90%;
+    flex: 1;
     max-width: 800px;
-    margin: 2rem;
     padding: 2.5rem;
     border-radius: 24px;
     position: relative;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 .glass-panel {
@@ -442,3 +442,308 @@ p {
     letter-spacing: 2px;
     font-weight: 600;
 }
+
+/* Sidebar and Layout Wrapper Styles */
+.main-layout-wrapper {
+    display: flex;
+    gap: 2rem;
+    width: 95%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar-panel {
+    width: 350px;
+    flex-shrink: 0;
+    padding: 2rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 85vh;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+.sidebar-panel.hidden {
+    display: none !important;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.75rem;
+}
+
+.sidebar-header h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #a5b4fc, #fbcfe8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-header .close-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: none; /* Only show on mobile */
+}
+
+.sidebar-header .close-btn:hover {
+    color: var(--danger);
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sidebar-section.flex-grow {
+    flex-grow: 1;
+}
+
+.sidebar-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c4b5fd;
+    margin-bottom: 0.25rem;
+}
+
+/* Topic stats styles */
+.topic-stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.topic-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    padding: 0.75rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.topic-item:hover, .topic-item.active {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+    border-color: var(--primary);
+}
+
+.topic-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+}
+
+.topic-name {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.topic-count {
+    color: var(--text-muted);
+}
+
+.topic-progress-bg {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+}
+
+.topic-progress-correct {
+    height: 100%;
+    background: var(--success);
+    transition: width 0.3s;
+}
+
+.topic-progress-wrong {
+    height: 100%;
+    background: var(--danger);
+    transition: width 0.3s;
+}
+
+/* Filter bar and legend */
+.filter-bar {
+    margin-bottom: 0.5rem;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.filter-select option {
+    background: #0f172a;
+    color: var(--text-main);
+}
+
+.status-legend {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-muted);
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.legend-item .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot.unanswered {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dot.correct {
+    background: var(--success);
+}
+
+.dot.wrong {
+    background: var(--danger);
+}
+
+/* Question Grid */
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.q-btn {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--option-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.q-btn:hover {
+    background: var(--option-hover);
+    color: white;
+    transform: scale(1.05);
+}
+
+.q-btn.active {
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    color: white;
+}
+
+.q-btn.correct {
+    background: rgba(16, 185, 129, 0.25);
+    border-color: var(--success);
+    color: #a7f3d0;
+}
+
+.q-btn.wrong {
+    background: rgba(239, 68, 68, 0.25);
+    border-color: var(--danger);
+    color: #fecaca;
+}
+
+/* Responsive overlay styling */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 99;
+    transition: opacity 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .main-layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .app-container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .sidebar-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        max-height: 100vh;
+        width: 320px;
+        z-index: 100;
+        border-radius: 24px 0 0 24px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        display: flex !important;
+        visibility: hidden;
+    }
+    
+    .sidebar-panel.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+    
+    .sidebar-panel.hidden {
+        display: flex !important;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+    
+    .sidebar-header .close-btn {
+        display: block;
+    }
+}
+

@@ -14,75 +14,113 @@
         <div class="shape shape-3"></div>
     </div>
 
-    <div class="app-container glass-panel">
-        <header>
-            <h1>Trắc nghiệm Ôn tập</h1>
-            <div class="header-right">
-                <div class="score-board">
-                    <span>Điểm: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
-                </div>
-                <button id="header-reset-btn" class="icon-btn hidden" title="Làm lại từ đầu">🔄</button>
+    <div class="main-layout-wrapper">
+        <!-- Sidebar Panel -->
+        <aside id="sidebar-panel" class="sidebar-panel glass-panel hidden">
+            <div class="sidebar-header">
+                <h2>Bảng Tiến Độ</h2>
+                <button id="close-sidebar-btn" class="close-btn" title="Đóng danh sách">✕</button>
             </div>
-        </header>
-
-        <div id="setup-screen" class="screen active">
-            <h2>Chào mừng!</h2>
-            <p>Ứng dụng sẽ tải bộ câu hỏi từ <strong>index.json</strong>.</p>
             
-            <div id="resume-container" class="resume-container hidden">
-                <div class="resume-card">
-                    <h3>Tiếp tục bài làm dở</h3>
-                    <p id="resume-info">Bạn đã làm đến câu 0/0. Điểm hiện tại: 0.</p>
-                    <div class="resume-actions">
-                        <button id="resume-btn" class="primary-btn">Tiếp tục làm bài</button>
-                        <button id="clear-saved-btn" class="secondary-btn">Làm mới từ đầu</button>
+            <div class="sidebar-section">
+                <h3>📊 Thống kê theo Chủ đề</h3>
+                <div id="topic-stats-list" class="topic-stats-list">
+                    <!-- Dynamic topic stats will be injected here -->
+                </div>
+            </div>
+            
+            <div class="sidebar-section flex-grow">
+                <h3>📝 Lưới Câu Hỏi (<span id="sidebar-question-count">0</span>)</h3>
+                <div class="filter-bar">
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">Tất cả chủ đề</option>
+                    </select>
+                </div>
+                <div class="status-legend">
+                    <span class="legend-item"><span class="dot unanswered"></span>Chưa làm</span>
+                    <span class="legend-item"><span class="dot correct"></span>Đúng</span>
+                    <span class="legend-item"><span class="dot wrong"></span>Sai</span>
+                </div>
+                <div id="question-grid" class="question-grid">
+                    <!-- Question buttons will be injected here -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="app-container glass-panel">
+            <header>
+                <h1>Trắc nghiệm Ôn tập</h1>
+                <div class="header-right">
+                    <button id="toggle-sidebar-btn" class="icon-btn hidden" title="Danh sách câu hỏi & Thống kê">📊</button>
+                    <div class="score-board">
+                        <span>Điểm: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
                     </div>
+                    <button id="header-reset-btn" class="icon-btn hidden" title="Làm lại từ đầu">🔄</button>
                 </div>
-                <div class="divider-text">— HOẶC —</div>
-            </div>
+            </header>
 
-            <button id="start-btn" class="primary-btn">Bắt đầu làm bài mới</button>
-            <p id="error-msg" class="error hidden">Không thể tải file index.json do giới hạn trình duyệt. Vui lòng chọn file thủ công bên dưới.</p>
-            
-            <div class="file-upload">
-                <p>Hoặc chọn file thủ công:</p>
-                <input type="file" id="file-input" accept=".json">
-            </div>
-        </div>
-
-        <div id="quiz-screen" class="screen hidden">
-            <div class="progress-container">
-                <div class="progress-bar" id="progress-bar"></div>
-            </div>
-            <div class="question-header">
-                <div class="badges">
-                    <span class="category-badge" id="category-badge">Category</span>
-                    <span class="category-badge sub-category" id="sub-category-badge" style="display: none;">Sub</span>
+            <div id="setup-screen" class="screen active">
+                <h2>Chào mừng!</h2>
+                <p>Ứng dụng sẽ tải bộ câu hỏi từ <strong>index.json</strong>.</p>
+                
+                <div id="resume-container" class="resume-container hidden">
+                    <div class="resume-card">
+                        <h3>Tiếp tục bài làm dở</h3>
+                        <p id="resume-info">Bạn đã làm đến câu 0/0. Điểm hiện tại: 0.</p>
+                        <div class="resume-actions">
+                            <button id="resume-btn" class="primary-btn">Tiếp tục làm bài</button>
+                            <button id="clear-saved-btn" class="secondary-btn">Làm mới từ đầu</button>
+                        </div>
+                    </div>
+                    <div class="divider-text">— HOẶC —</div>
                 </div>
-                <span class="question-counter" id="question-counter">Câu 1/10</span>
-            </div>
-            <h2 id="question-text" class="question-text">Question text goes here?</h2>
-            
-            <div id="options-container" class="options-container">
-                <!-- Options will be dynamically injected here -->
+
+                <button id="start-btn" class="primary-btn">Bắt đầu làm bài mới</button>
+                <p id="error-msg" class="error hidden">Không thể tải file index.json do giới hạn trình duyệt. Vui lòng chọn file thủ công bên dưới.</p>
+                
+                <div class="file-upload">
+                    <p>Hoặc chọn file thủ công:</p>
+                    <input type="file" id="file-input" accept=".json">
+                </div>
             </div>
 
-            <div class="actions">
-                <button id="prev-btn" class="secondary-btn hidden">🡠 Câu trước</button>
-                <button id="next-btn" class="secondary-btn hidden">Câu tiếp theo ➔</button>
-            </div>
-        </div>
+            <div id="quiz-screen" class="screen hidden">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="question-header">
+                    <div class="badges">
+                        <span class="category-badge" id="category-badge">Category</span>
+                        <span class="category-badge sub-category" id="sub-category-badge" style="display: none;">Sub</span>
+                    </div>
+                    <span class="question-counter" id="question-counter">Câu 1/10</span>
+                </div>
+                <h2 id="question-text" class="question-text">Question text goes here?</h2>
+                
+                <div id="options-container" class="options-container">
+                    <!-- Options will be dynamically injected here -->
+                </div>
 
-        <div id="result-screen" class="screen hidden">
-            <h2>Hoàn thành!</h2>
-            <div class="final-score-circle">
-                <span id="final-score">0</span>
-                <span class="total-label">/ <span id="final-total">0</span></span>
+                <div class="actions">
+                    <button id="prev-btn" class="secondary-btn hidden">🡠 Câu trước</button>
+                    <button id="next-btn" class="secondary-btn hidden">Câu tiếp theo ➔</button>
+                </div>
             </div>
-            <p id="feedback-msg">Tuyệt vời!</p>
-            <button id="restart-btn" class="primary-btn">Làm lại</button>
+
+            <div id="result-screen" class="screen hidden">
+                <h2>Hoàn thành!</h2>
+                <div class="final-score-circle">
+                    <span id="final-score">0</span>
+                    <span class="total-label">/ <span id="final-total">0</span></span>
+                </div>
+                <p id="feedback-msg">Tuyệt vời!</p>
+                <button id="restart-btn" class="primary-btn">Làm lại</button>
+            </div>
         </div>
     </div>
+
+    <div id="sidebar-overlay" class="sidebar-overlay hidden"></div>
 
     <script src="script.js"></script>
 </body>

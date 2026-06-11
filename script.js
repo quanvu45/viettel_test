@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearSavedBtn = document.getElementById('clear-saved-btn');
     const headerResetBtn = document.getElementById('header-reset-btn');
 
+    // Sidebar DOM Elements
+    const sidebarPanel = document.getElementById('sidebar-panel');
+    const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const questionGrid = document.getElementById('question-grid');
+    const topicStatsList = document.getElementById('topic-stats-list');
+    const categoryFilter = document.getElementById('category-filter');
+    const sidebarQuestionCount = document.getElementById('sidebar-question-count');
+
     // State
     let questions = [];
     let currentQuestionIndex = 0;
@@ -138,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             headerResetBtn.classList.remove('hidden');
             switchScreen(setupScreen, quizScreen);
+            initSidebar();
             loadQuestion();
         }
     });
@@ -183,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         headerResetBtn.classList.remove('hidden');
         switchScreen(setupScreen, quizScreen);
+        initSidebar();
         loadQuestion();
         saveProgress();
     }
@@ -198,6 +210,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const q = questions[currentQuestionIndex];
+
+        // Update Category filter if current question is of a different category
+        const currentCategory = q.category || 'Chung';
+        if (categoryFilter.value !== 'all' && currentCategory !== categoryFilter.value) {
+            categoryFilter.value = 'all';
+        }
+        buildQuestionGrid();
+        updateTopicStats();
 
         // Update UI
         questionCounter.textContent = `Câu ${currentQuestionIndex + 1}/${questions.length}`;
@@ -283,6 +303,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         userAnswers[currentQuestionIndex] = { selectedIndex, isCorrect };
 
+        // Update sidebar stats and grid
+        buildQuestionGrid();
+        updateTopicStats();
+
         // Update progress bar to include current question
         const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
         progressBar.style.width = `${progress}%`;
@@ -350,6 +374,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function switchScreen(hideScreen, showScreen) {
+        if (showScreen === quizScreen) {
+            showQuizSidebar();
+        } else if (showScreen === setupScreen || showScreen === resultScreen) {
+            hideQuizSidebar();
+        }
         hideScreen.classList.remove('active');
         setTimeout(() => {
             hideScreen.classList.add('hidden');
@@ -360,6 +389,172 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 10);
         }, 300); // Wait for fade out
     }
+
+    // Sidebar Logic Functions
+    function showQuizSidebar() {
+        toggleSidebarBtn.classList.remove('hidden');
+        if (window.innerWidth > 992) {
+            sidebarPanel.classList.remove('hidden');
+        } else {
+            sidebarPanel.classList.add('hidden');
+        }
+    }
+
+    function hideQuizSidebar() {
+        toggleSidebarBtn.classList.add('hidden');
+        sidebarPanel.classList.add('hidden');
+        sidebarPanel.classList.remove('active');
+        sidebarOverlay.classList.add('hidden');
+    }
+
+    function initSidebar() {
+        if (!questions || questions.length === 0) return;
+
+        sidebarQuestionCount.textContent = questions.length;
+
+        // Populate category filter
+        const categories = ['all'];
+        questions.forEach(q => {
+            const cat = q.category || 'Chung';
+            if (!categories.includes(cat)) {
+                categories.push(cat);
+            }
+        });
+
+        categoryFilter.innerHTML = '<option value="all">Tất cả chủ đề</option>';
+        categories.forEach(cat => {
+            if (cat !== 'all') {
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.textContent = cat;
+                categoryFilter.appendChild(opt);
+            }
+        });
+
+        buildQuestionGrid();
+        updateTopicStats();
+    }
+
+    function buildQuestionGrid() {
+        questionGrid.innerHTML = '';
+        const selectedCategory = categoryFilter.value;
+
+        questions.forEach((q, index) => {
+            const qCategory = q.category || 'Chung';
+
+            if (selectedCategory !== 'all' && qCategory !== selectedCategory) {
+                return;
+            }
+
+            const btn = document.createElement('button');
+            btn.className = 'q-btn';
+            btn.textContent = index + 1;
+            btn.title = `Câu ${index + 1}: ${qCategory}`;
+
+            if (index === currentQuestionIndex) {
+                btn.classList.add('active');
+            }
+
+            const answer = userAnswers[index];
+            if (answer) {
+                if (answer.isCorrect) {
+                    btn.classList.add('correct');
+                } else {
+                    btn.classList.add('wrong');
+                }
+            }
+
+            btn.addEventListener('click', () => {
+                currentQuestionIndex = index;
+                loadQuestion();
+                saveProgress();
+                if (window.innerWidth <= 992) {
+                    sidebarPanel.classList.remove('active');
+                    sidebarOverlay.classList.add('hidden');
+                }
+            });
+
+            questionGrid.appendChild(btn);
+        });
+    }
+
+    function updateTopicStats() {
+        topicStatsList.innerHTML = '';
+
+        const stats = {};
+        questions.forEach((q, index) => {
+            const cat = q.category || 'Chung';
+            if (!stats[cat]) {
+                stats[cat] = { total: 0, correct: 0, wrong: 0, answered: 0 };
+            }
+            stats[cat].total++;
+
+            const answer = userAnswers[index];
+            if (answer) {
+                stats[cat].answered++;
+                if (answer.isCorrect) {
+                    stats[cat].correct++;
+                } else {
+                    stats[cat].wrong++;
+                }
+            }
+        });
+
+        for (const [catName, data] of Object.entries(stats)) {
+            const item = document.createElement('div');
+            item.className = 'topic-item';
+            if (categoryFilter.value === catName) {
+                item.classList.add('active');
+            }
+
+            const percentCorrect = data.total > 0 ? (data.correct / data.total) * 100 : 0;
+            const percentWrong = data.total > 0 ? (data.wrong / data.total) * 100 : 0;
+
+            item.innerHTML = `
+                <div class="topic-info">
+                    <span class="topic-name" title="${catName}">${catName}</span>
+                    <span class="topic-count">${data.answered}/${data.total} câu</span>
+                </div>
+                <div class="topic-progress-bg">
+                    <div class="topic-progress-correct" style="width: ${percentCorrect}%"></div>
+                    <div class="topic-progress-wrong" style="width: ${percentWrong}%"></div>
+                </div>
+            `;
+
+            item.addEventListener('click', () => {
+                categoryFilter.value = catName;
+                buildQuestionGrid();
+                updateTopicStats();
+            });
+
+            topicStatsList.appendChild(item);
+        }
+    }
+
+    // Sidebar Toggling Event Listeners
+    toggleSidebarBtn.addEventListener('click', () => {
+        if (window.innerWidth <= 992) {
+            sidebarPanel.classList.toggle('active');
+            sidebarOverlay.classList.toggle('hidden');
+        } else {
+            sidebarPanel.classList.toggle('hidden');
+        }
+    });
+
+    closeSidebarBtn.addEventListener('click', () => {
+        sidebarPanel.classList.remove('active');
+        sidebarOverlay.classList.add('hidden');
+    });
+
+    sidebarOverlay.addEventListener('click', () => {
+        sidebarPanel.classList.remove('active');
+        sidebarOverlay.classList.add('hidden');
+    });
+
+    categoryFilter.addEventListener('change', () => {
+        buildQuestionGrid();
+        updateTopicStats();
+    });
 
     // Check saved progress on load
     checkSavedProgress();
