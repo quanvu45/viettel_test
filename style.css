@@ -366,3 +366,79 @@ p {
     color: var(--text-muted);
     margin-left: 5px;
 }
+
+/* Header Reset Styles */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.icon-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--glass-border);
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.icon-btn:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.3);
+    transform: scale(1.05);
+}
+
+/* Resume/Saved Progress Section */
+.resume-container {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.resume-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resume-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #c4b5fd;
+    font-weight: 600;
+}
+
+.resume-card p {
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.resume-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.resume-actions button {
+    flex: 1;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 10px !important;
+}
+
+.divider-text {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}

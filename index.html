@@ -17,15 +17,31 @@
     <div class="app-container glass-panel">
         <header>
             <h1>Trắc nghiệm Ôn tập</h1>
-            <div class="score-board">
-                <span>Điểm: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
+            <div class="header-right">
+                <div class="score-board">
+                    <span>Điểm: <strong id="score">0</strong> / <span id="total-questions">0</span></span>
+                </div>
+                <button id="header-reset-btn" class="icon-btn hidden" title="Làm lại từ đầu">🔄</button>
             </div>
         </header>
 
         <div id="setup-screen" class="screen active">
             <h2>Chào mừng!</h2>
             <p>Ứng dụng sẽ tải bộ câu hỏi từ <strong>index.json</strong>.</p>
-            <button id="start-btn" class="primary-btn">Bắt đầu làm bài</button>
+            
+            <div id="resume-container" class="resume-container hidden">
+                <div class="resume-card">
+                    <h3>Tiếp tục bài làm dở</h3>
+                    <p id="resume-info">Bạn đã làm đến câu 0/0. Điểm hiện tại: 0.</p>
+                    <div class="resume-actions">
+                        <button id="resume-btn" class="primary-btn">Tiếp tục làm bài</button>
+                        <button id="clear-saved-btn" class="secondary-btn">Làm mới từ đầu</button>
+                    </div>
+                </div>
+                <div class="divider-text">— HOẶC —</div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">Bắt đầu làm bài mới</button>
             <p id="error-msg" class="error hidden">Không thể tải file index.json do giới hạn trình duyệt. Vui lòng chọn file thủ công bên dưới.</p>
             
             <div class="file-upload">

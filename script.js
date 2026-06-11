@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const finalTotalDisplay = document.getElementById('final-total');
     const feedbackMsg = document.getElementById('feedback-msg');
 
+    // Progress UI Elements
+    const resumeContainer = document.getElementById('resume-container');
+    const resumeInfo = document.getElementById('resume-info');
+    const resumeBtn = document.getElementById('resume-btn');
+    const clearSavedBtn = document.getElementById('clear-saved-btn');
+    const headerResetBtn = document.getElementById('header-reset-btn');
+
     // State
     let questions = [];
     let currentQuestionIndex = 0;
@@ -40,36 +47,121 @@ document.addEventListener('DOMContentLoaded', () => {
         return array;
     }
 
+    // Progress Persistence Functions
+    function saveProgress() {
+        const state = {
+            questions,
+            currentQuestionIndex,
+            score,
+            userAnswers
+        };
+        localStorage.setItem('viettel_quiz_progress', JSON.stringify(state));
+    }
+
+    function checkSavedProgress() {
+        const saved = localStorage.getItem('viettel_quiz_progress');
+        if (saved) {
+            try {
+                const state = JSON.parse(saved);
+                if (state && state.questions && state.questions.length > 0) {
+                    resumeInfo.textContent = `Bạn đã làm đến câu ${state.currentQuestionIndex + 1}/${state.questions.length}. Điểm hiện tại: ${state.score}.`;
+                    resumeContainer.classList.remove('hidden');
+                    return state;
+                }
+            } catch (e) {
+                console.error("Error parsing saved progress:", e);
+                localStorage.removeItem('viettel_quiz_progress');
+            }
+        }
+        resumeContainer.classList.add('hidden');
+        return null;
+    }
+
+    function confirmNewQuizStart(callback) {
+        if (localStorage.getItem('viettel_quiz_progress')) {
+            if (confirm("Bạn có bài làm chưa hoàn thành. Bắt đầu bài mới sẽ xóa tiến trình cũ, bạn có muốn tiếp tục?")) {
+                localStorage.removeItem('viettel_quiz_progress');
+                callback();
+            }
+        } else {
+            callback();
+        }
+    }
+
     // Initialize Quiz
     startBtn.addEventListener('click', () => {
-        fetch('index.json')
-            .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
-                return response.json();
-            })
-            .then(data => {
-                startQuiz(data);
-            })
-            .catch(error => {
-                console.error('Error fetching questions:', error);
-                errorMsg.classList.remove('hidden');
-            });
+        confirmNewQuizStart(() => {
+            fetch('index.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.json();
+                })
+                .then(data => {
+                    startQuiz(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching questions:', error);
+                    errorMsg.classList.remove('hidden');
+                });
+        });
     });
 
     fileInput.addEventListener('change', (e) => {
         const file = e.target.files[0];
         if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                try {
-                    const data = JSON.parse(e.target.result);
-                    startQuiz(data);
-                } catch (err) {
-                    errorMsg.textContent = "Lỗi khi đọc file. Vui lòng đảm bảo đây là file JSON hợp lệ.";
-                    errorMsg.classList.remove('hidden');
-                }
-            };
-            reader.readAsText(file);
+            confirmNewQuizStart(() => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    try {
+                        const data = JSON.parse(e.target.result);
+                        startQuiz(data);
+                    } catch (err) {
+                        errorMsg.textContent = "Lỗi khi đọc file. Vui lòng đảm bảo đây là file JSON hợp lệ.";
+                        errorMsg.classList.remove('hidden');
+                    }
+                };
+                reader.readAsText(file);
+            });
+        }
+    });
+
+    resumeBtn.addEventListener('click', () => {
+        const state = checkSavedProgress();
+        if (state) {
+            questions = state.questions;
+            currentQuestionIndex = state.currentQuestionIndex;
+            score = state.score;
+            userAnswers = state.userAnswers;
+
+            totalDisplay.textContent = questions.length;
+            scoreDisplay.textContent = score;
+
+            headerResetBtn.classList.remove('hidden');
+            switchScreen(setupScreen, quizScreen);
+            loadQuestion();
+        }
+    });
+
+    clearSavedBtn.addEventListener('click', () => {
+        if (confirm("Bạn có chắc chắn muốn xóa tiến trình làm bài trước đó?")) {
+            localStorage.removeItem('viettel_quiz_progress');
+            resumeContainer.classList.add('hidden');
+        }
+    });
+
+    headerResetBtn.addEventListener('click', () => {
+        if (confirm("Bạn có chắc chắn muốn làm lại từ đầu không? Toàn bộ tiến trình làm bài sẽ bị xóa.")) {
+            localStorage.removeItem('viettel_quiz_progress');
+            headerResetBtn.classList.add('hidden');
+            
+            let currentActiveScreen = quizScreen;
+            if (resultScreen.classList.contains('active')) {
+                currentActiveScreen = resultScreen;
+            }
+            switchScreen(currentActiveScreen, setupScreen);
+            setTimeout(() => {
+                checkSavedProgress();
+            }, 300);
         }
     });
 
@@ -89,8 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
         totalDisplay.textContent = questions.length;
         scoreDisplay.textContent = score;
 
+        headerResetBtn.classList.remove('hidden');
         switchScreen(setupScreen, quizScreen);
         loadQuestion();
+        saveProgress();
     }
 
     function loadQuestion() {
@@ -120,7 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
         questionText.innerHTML = q.question.replace(/\n/g, '<br>');
 
         // Update Progress
-        const progress = ((currentQuestionIndex) / questions.length) * 100;
+        const progressVal = userAnswers[currentQuestionIndex] ? currentQuestionIndex + 1 : currentQuestionIndex;
+        const progress = (progressVal / questions.length) * 100;
         progressBar.style.width = `${progress}%`;
 
         // Load Options
@@ -200,12 +295,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             nextBtn.textContent = 'Câu tiếp theo ➔';
         }
+
+        saveProgress();
     }
 
     nextBtn.addEventListener('click', () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
             loadQuestion();
+            saveProgress();
         } else {
             showResults();
         }
@@ -215,11 +313,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentQuestionIndex > 0) {
             currentQuestionIndex--;
             loadQuestion();
+            saveProgress();
         }
     });
 
     function showResults() {
         switchScreen(quizScreen, resultScreen);
+        localStorage.removeItem('viettel_quiz_progress');
 
         finalScoreDisplay.textContent = score;
         finalTotalDisplay.textContent = questions.length;
@@ -243,8 +343,10 @@ document.addEventListener('DOMContentLoaded', () => {
         score = 0;
         userAnswers = new Array(questions.length).fill(null);
         scoreDisplay.textContent = score;
+        headerResetBtn.classList.remove('hidden');
         switchScreen(resultScreen, quizScreen);
         loadQuestion();
+        saveProgress();
     });
 
     function switchScreen(hideScreen, showScreen) {
@@ -258,4 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 10);
         }, 300); // Wait for fade out
     }
+
+    // Check saved progress on load
+    checkSavedProgress();
 });
